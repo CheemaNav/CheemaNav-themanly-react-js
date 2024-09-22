@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'rocaone-blitregular';
+    src: url('../public/font/roca_black_italic-webfont.woff2') format('woff2'),
+         url('../public/font/roca_black_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'rocaone-blregular';
+    src: url('../public/font/roca_black-webfont.woff2') format('woff2'),
+         url('../public/font/roca_black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'rocaone-bditregular';
+    src: url('../public/font/roca_bold_italic-webfont.woff2') format('woff2'),
+         url('../public/font/roca_bold_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'rocaone-boldregular';
+    src: url('../public/font/roca_bold-webfont.woff2') format('woff2'),
+         url('../public/font/roca_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'rocaone-hvitregular';
+    src: url('../public/font/roca_heavy_italic-webfont.woff2') format('woff2'),
+         url('../public/font/roca_heavy_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'rocaone-hvregular';
+    src: url('../public/font/roca_heavy-webfont.woff2') format('woff2'),
+         url('../public/font/roca_heavy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'rocaone-itregular';
+    src: url('../public/font/roca_italic-webfont.woff2') format('woff2'),
+         url('../public/font/roca_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'rocaone-ltitregular';
+    src: url('../public/font/roca_light_italic-webfont.woff2') format('woff2'),
+         url('../public/font/roca_light_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'rocaone-ltregular';
+    src: url('../public/font/roca_light-webfont.woff2') format('woff2'),
+         url('../public/font/roca_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'rocaone-rgregular';
+    src: url('../public/font/roca_regular-webfont.woff2') format('woff2'),
+         url('../public/font/roca_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'rocaone-thitregular';
+    src: url('../public/font/roca_thin_italic-webfont.woff2') format('woff2'),
+         url('../public/font/roca_thin_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'rocaone-thregular';
+    src: url('../public/font/roca_thin-webfont.woff2') format('woff2'),
+         url('../public/font/roca_thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body, *, p, li, span{font-family: 'rocaone-rgregular';}
+h1, h2, h3, h4, h5, h6, strong{font-family: 'rocaone-blitregular';}
+
+.space_60{padding-top: 60px !important; padding-bottom: 60px !important;}
+.bg-primary {background: #084060 !important;}
+.fony-18{font-size: 18px !important;}
+.fony-20{font-size: 20px !important;}
+.btn { line-height: 1; padding-block: 10px; }
+
+.btn-primary{background-color: #084060 !important; border-color:#084060 !important;}
+.btn-primary:hover{background-color: #02263b !important; border-color:#02263b !important;}
+.text-primary{color: #084060 !important;}
+header img.logo { width: 180px; }
+.banner{background: url(../public/banner.jpeg) no-repeat center / cover;  background-position: top right; position: relative;padding-block: 60px;}
+/* section.banner:before { content: ''; background: #00000075; width: 100%; height: 100%; position: absolute; top: 0; left: 0; } */
+.banner form { background: #00000033; border-color: #72767a !important; border-radius: 20px !important; }
+.banner .row{position: relative;}
+.banner form label{color: #fff;font-size: 13px; font-style: normal;}
+
+/* treat_sec */
+section.treat_sec .card { height: 100%;border-radius: 20px !important; overflow: hidden;}
+section.treat_sec .card-title { font-weight: 700; }
+section.treat_sec .card-body .card-text { flex: 1; }
+section.treat_sec .card-body { display: flex; flex-flow: column; }
+section.treat_sec .card-body a.btn {width: fit-content;padding-inline: 25px;font-weight: 600;}
+
+/* .story_sec { background: #003a5c !important; } */
+section.treat_sec img { height: 230px; object-fit: cover; object-position: top; }
+
+.expert_sec{}
+
+.privacy_sec:before { content: ""; width: 0; height: 0; border-top: 100px solid #fff; border-left: 100px solid transparent; position: absolute; top: 0; right: 0; }
+.faq_sec button { box-shadow: unset !important; outline: unset !important; }
+.faq_sec button[aria-expanded="true"] { color: #000; background: #0d6efd14; }
+
+/* .review_Sec { background: #003a5c !important; } */
+section.review_Sec .card-body.card { background: #fff; padding-top: 30px;border-color: #00466e !important; border-radius: 22px;}
+section.review_Sec .card-body.card .lead { font-size: 15px;   font-family: 'rocaone-ltregular'; }
+section.review_Sec .card-body.card p{color: #000 !important;}
+section.review_Sec .col-md-12 { padding: 10px; }
+.review_Sec .slick-prev:before, .review_Sec .slick-next:before { background: #003451; width: 42px; height: 42px; display: flex; border-radius: 50%; align-items: center; justify-content: center; font-size: 26px; padding-top: 6px; font-family: unset;}
+
+.blog_sec figure.card-img-top img { height: 230px; width: 100%; object-fit: cover; object-position: top center; }
+
+
+
