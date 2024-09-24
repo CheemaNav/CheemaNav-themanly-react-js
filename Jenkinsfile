@@ -1,0 +1,31 @@
+pipeline {
+    agent any
+    triggers {
+        pollSCM 'H * * * *'
+    }
+    stages {
+        stage('Prebuild') {
+                steps {
+                   script{
+                        echo 'Pulling WMS-UI Development branch. ' + env.BRANCH_NAME
+                        sh 'npm install'
+                   }
+                }
+        }
+        stage('Build') {
+            steps {
+               script{
+                    sh 'ng build --configuration=staging --aot --output-hashing=all --base-href=/'
+               }
+            }
+        }
+        stage('Deploy') {
+            steps {
+                script{
+                    sh 'mv -v /opt/html/wms-dev/wms/ /opt/html/wms-dev/wms_$(date +%Y%m%d%H%M)/'
+                    sh 'mv ./dist/wms/ /opt/html/wms-dev/'
+                }
+            }
+        }
+    }
+}
