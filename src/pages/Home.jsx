@@ -135,7 +135,7 @@ const Home = () => {
             </div>
         </section> */}
 
-        <section className='pt-5 bg-primary expert_sec story_sec'>
+        <section className='py-5 bg-primary expert_sec story_sec'>
             <div className='container'>
                 <div className='row align-items-center'>
                     <div className='col-12 col-md-6'>
@@ -143,7 +143,7 @@ const Home = () => {
                         <a href='#' className='btn btn-light mt-4'> Start your treatment </a>
                     </div>
                     <div className='col-12 col-md-6'>
-                        <img className='w-100' src='https://qurex-s3.s3.ap-south-1.amazonaws.com/assets/wellness/Doctor.webp' />
+                        <img className='w-100' src='' />
                     </div>
                 </div>
             </div>
