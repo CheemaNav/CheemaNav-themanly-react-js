@@ -15,7 +15,7 @@ pipeline {
         stage('Build') {
             steps {
                script{
-                    sh 'vite build --logLevel error'
+                    sh 'npm run build'
                }
             }
         }
