@@ -15,7 +15,7 @@ pipeline {
         stage('Build') {
             steps {
                script{
-                    sh 'ng build --configuration=staging --aot --output-hashing=all --base-href=/'
+                    sh 'npm run build'
                }
             }
         }
