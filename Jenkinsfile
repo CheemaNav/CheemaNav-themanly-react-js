@@ -23,7 +23,7 @@ pipeline {
             steps {
                 script{
                     sh'ls -lrth'
-                   // sh 'mv -v /opt/html/wms-dev/wms/ /opt/html/wms-dev/wms_$(date +%Y%m%d%H%M)/'
+                    sh 'mv -v /opt/html/themanly/dist/ /opt/html/themanly/dist_$(date +%Y%m%d%H%M)/'
                     sh 'mv ./dist/ /opt/html/themanly'
                 }
             }
