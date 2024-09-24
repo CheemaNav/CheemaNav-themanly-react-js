@@ -24,7 +24,7 @@ pipeline {
                 script{
                     sh'ls -lrth'
                    // sh 'mv -v /opt/html/wms-dev/wms/ /opt/html/wms-dev/wms_$(date +%Y%m%d%H%M)/'
-                    //sh 'mv ./dist/wms/ /opt/html/wms-dev/'
+                    sh 'mv /dist/ /opt/html/themanly/'
                 }
             }
         }
