@@ -18,7 +18,7 @@ const Home = () => {
                             </h1>
                            
                         </div>
-                        <div className="col-12 col-md-4">
+                        <div className="col-12 col-md-6 col-lg-4 mt-4 mt-md-0">
                         <Bannerform />
                         </div>
                     </div>
