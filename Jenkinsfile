@@ -25,7 +25,7 @@ pipeline {
                     sh'ls -lrth'
                     sh 'mv -v /opt/html/themanly /opt/html/themanly_$(date +%Y%m%d%H%M)/'
                     sh 'mv ./dist /opt/html/'
-                    sh 'mv /opt/dist /opt/html/themanly'
+                    sh 'mv /opt/html/dist /opt/html/themanly'
                 }
             }
         }
