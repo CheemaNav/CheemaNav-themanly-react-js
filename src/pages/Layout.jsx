@@ -20,11 +20,11 @@ function Layout() {
 <Outlet />
 
 
-  <footer class="text-center text-lg-start text-white bg-dark pt-4">
+  <footer class="text-lg-start text-white bg-dark pt-4">
 
 
     <section class="container">
-      <div class="container text-center text-md-start mt-2">
+      <div class="container text-md-start mt-2">
  
         <div class="row mt-3">
    
