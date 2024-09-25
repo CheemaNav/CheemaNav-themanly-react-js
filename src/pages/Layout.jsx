@@ -37,8 +37,6 @@ function Layout() {
             </p>
           </div>
  
-         
-     
           <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-2">
            
             <h6 class="text-uppercase fw-bold mb-4">Quick Links</h6>
