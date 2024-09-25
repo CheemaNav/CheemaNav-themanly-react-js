@@ -7,20 +7,29 @@ const Bannerform = () => {
         <p className='fw-bold text-white text-center h6'>Book your appointment @ just ₹ 499/-</p>
             <div className="col-md-6 col-12">
                 <label className="form-label">Name*</label>
-                <input type="text" className="form-control" id="validationDefault01"  required />
+                <input type="text" className="form-control" required />
             </div>
             <div className="col-md-6 col-12">
                 <label  className="form-label">Email</label>
-                <input type="email" className="form-control" id="validationDefault02" required />
+                <input type="email" className="form-control" required />
             </div>
             <div className="col-md-6 col-12">
                 <label className="form-label">Phone Number</label>
-                <input type="text" className="form-control" id="validationDefault01"  required />
+                <input type="text" className="form-control" required />
             </div>
             <div className="col-md-6 col-12">
                 <label className="form-label">Age
                 </label>
-                <input type="email" className="form-control" id="validationDefault02" />
+                <input type="email" className="form-control"/>
+            </div>
+            <div className="col-md-6 col-12">
+                <label className="form-label">City</label>
+                <input type="text" className="form-control" />
+            </div>
+            <div className="col-md-6 col-12">
+                <label className="form-label">Problem 
+                </label>
+                <input type="text" className="form-control" />
             </div>
 
             <div className="col-12">
