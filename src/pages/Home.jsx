@@ -244,40 +244,40 @@ const Home = () => {
 
 
        
-<section class="space_60 blog_sec">
+<section className="space_60 blog_sec">
 <h2 className='text-center pb-2'>Blogs</h2>
-  <div class="container overflow-hidden">
-    <div class="row gy-4 gy-md-5 gx-xl-6 gy-xl-6 gx-xxl-9 gy-xxl-9">
-      <div class="col-12 col-lg-4">
+  <div className="container overflow-hidden">
+    <div className="row gy-4 gy-md-5 gx-xl-6 gy-xl-6 gx-xxl-9 gy-xxl-9">
+      <div className="col-12 col-lg-4">
         <article>
-          <div class="card border-0 bg-transparent">
-            <figure class="card-img-top mb-4 overflow-hidden bsb-overlay-hover">
+          <div className="card border-0 bg-transparent">
+            <figure className="card-img-top mb-4 overflow-hidden bsb-overlay-hover">
               <a href="#!">
-                <img class="img-fluid" loading="lazy" src="../../public/liver.jpeg" alt="Living" />
+                <img className="img-fluid" loading="lazy" src="../../public/liver.jpeg" alt="Living" />
               </a>
    
             </figure>
-            <div class="card-body m-0 p-0">
-              <div class="entry-header mb-2">
-                <ul class="entry-meta list-unstyled d-flex mb-3">
+            <div className="card-body m-0 p-0">
+              <div className="entry-header mb-2">
+                <ul className="entry-meta list-unstyled d-flex mb-3">
                   <li>
-                    <a class="d-inline-flex px-2 py-1 link-primary text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-2 text-decoration-none fs-7" href="#!">Liver Health</a>
+                    <a className="d-inline-flex px-2 py-1 link-primary text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-2 text-decoration-none fs-7" href="#!">Liver Health</a>
                   </li>
                 </ul>
-                <h2 class="card-title entry-title h4 m-0">
-                  <a class="link-dark text-decoration-none" href="#!">TheManly, targets male reproductive</a>
+                <h2 className="card-title entry-title h4 m-0">
+                  <a className="link-dark text-decoration-none" href="#!">TheManly, targets male reproductive</a>
                 </h2>
               </div>
             </div>
-            <div class="card-footer border-0 bg-transparent p-0 m-0">
-              <ul class="entry-meta list-unstyled d-flex align-items-center m-0">
+            <div className="card-footer border-0 bg-transparent p-0 m-0">
+              <ul className="entry-meta list-unstyled d-flex align-items-center m-0">
                 <li>
-                  <a class="fs-7 link-secondary text-decoration-none d-flex align-items-center" href="#!">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                  <a className="fs-7 link-secondary text-decoration-none d-flex align-items-center" href="#!">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" className="bi bi-calendar3" viewBox="0 0 16 16">
                       <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
                       <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
                     </svg>
-                    <span class="ms-2 fs-7">11 Dec 2024</span>
+                    <span className="ms-2 fs-7">11 Dec 2024</span>
                   </a>
                 </li>
               </ul>
@@ -286,36 +286,36 @@ const Home = () => {
           </div>
         </article>
       </div>
-      <div class="col-12 col-lg-4">
+      <div className="col-12 col-lg-4">
         <article>
-          <div class="card border-0 bg-transparent">
-            <figure class="card-img-top mb-4 overflow-hidden bsb-overlay-hover">
+          <div className="card border-0 bg-transparent">
+            <figure className="card-img-top mb-4 overflow-hidden bsb-overlay-hover">
               <a href="#!">
-                <img class="img-fluid" loading="lazy" src="../../public/liver.jpeg" alt="Relationships" />
+                <img className="img-fluid" loading="lazy" src="../../public/liver.jpeg" alt="Relationships" />
               </a>
          
             </figure>
-            <div class="card-body m-0 p-0">
-              <div class="entry-header mb-2">
-                <ul class="entry-meta list-unstyled d-flex mb-3">
+            <div className="card-body m-0 p-0">
+              <div className="entry-header mb-2">
+                <ul className="entry-meta list-unstyled d-flex mb-3">
                   <li>
-                    <a class="d-inline-flex px-2 py-1 link-primary text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-2 text-decoration-none fs-7" href="#!">Liver Health</a>
+                    <a className="d-inline-flex px-2 py-1 link-primary text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-2 text-decoration-none fs-7" href="#!">Liver Health</a>
                   </li>
                 </ul>
-                <h2 class="card-title entry-title h4 m-0">
-                  <a class="link-dark text-decoration-none" href="#!">TheManly, targets male reproductive</a>
+                <h2 className="card-title entry-title h4 m-0">
+                  <a className="link-dark text-decoration-none" href="#!">TheManly, targets male reproductive</a>
                 </h2>
               </div>
             </div>
-            <div class="card-footer border-0 bg-transparent p-0 m-0">
-              <ul class="entry-meta list-unstyled d-flex align-items-center m-0">
+            <div className="card-footer border-0 bg-transparent p-0 m-0">
+              <ul className="entry-meta list-unstyled d-flex align-items-center m-0">
                 <li>
-                  <a class="fs-7 link-secondary text-decoration-none d-flex align-items-center" href="#!">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                  <a className="fs-7 link-secondary text-decoration-none d-flex align-items-center" href="#!">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" className="bi bi-calendar3" viewBox="0 0 16 16">
                       <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
                       <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
                     </svg>
-                    <span class="ms-2 fs-7">11 Aug 2023</span>
+                    <span className="ms-2 fs-7">11 Aug 2023</span>
                   </a>
                 </li>
               </ul>
@@ -324,35 +324,35 @@ const Home = () => {
           </div>
         </article>
       </div>
-      <div class="col-12 col-lg-4">
+      <div className="col-12 col-lg-4">
         <article>
-          <div class="card border-0 bg-transparent">
-            <figure class="card-img-top mb-4 overflow-hidden bsb-overlay-hover">
+          <div className="card border-0 bg-transparent">
+            <figure className="card-img-top mb-4 overflow-hidden bsb-overlay-hover">
               <a href="#!">
-                <img class="img-fluid" loading="lazy" src="../../public/liver.jpeg" alt="Career" />
+                <img className="img-fluid" loading="lazy" src="../../public/liver.jpeg" alt="Career" />
               </a>
             </figure>
-            <div class="card-body m-0 p-0">
-              <div class="entry-header mb-2">
-                <ul class="entry-meta list-unstyled d-flex mb-3">
+            <div className="card-body m-0 p-0">
+              <div className="entry-header mb-2">
+                <ul className="entry-meta list-unstyled d-flex mb-3">
                   <li>
-                    <a class="d-inline-flex px-2 py-1 link-primary text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-2 text-decoration-none fs-7" href="#!">Liver Health</a>
+                    <a className="d-inline-flex px-2 py-1 link-primary text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-2 text-decoration-none fs-7" href="#!">Liver Health</a>
                   </li>
                 </ul>
-                <h2 class="card-title entry-title h4 m-0">
-                  <a class="link-dark text-decoration-none" href="#!">TheManly, targets male reproductive</a>
+                <h2 className="card-title entry-title h4 m-0">
+                  <a className="link-dark text-decoration-none" href="#!">TheManly, targets male reproductive</a>
                 </h2>
               </div>
             </div>
-            <div class="card-footer border-0 bg-transparent p-0 m-0">
-              <ul class="entry-meta list-unstyled d-flex align-items-center m-0">
+            <div className="card-footer border-0 bg-transparent p-0 m-0">
+              <ul className="entry-meta list-unstyled d-flex align-items-center m-0">
                 <li>
-                  <a class="fs-7 link-secondary text-decoration-none d-flex align-items-center" href="#!">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                  <a className="fs-7 link-secondary text-decoration-none d-flex align-items-center" href="#!">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" className="bi bi-calendar3" viewBox="0 0 16 16">
                       <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
                       <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
                     </svg>
-                    <span class="ms-2 fs-7">2 Apr 2023</span>
+                    <span className="ms-2 fs-7">2 Apr 2023</span>
                   </a>
                 </li>
               </ul>
@@ -365,10 +365,10 @@ const Home = () => {
     </div>
   </div>
 
-  <div class="container">
-    <div class="row">
-      <div class="col text-center">
-        <a href="#!" class="btn btn-primary mt-5 py-2 px-4">Read More</a>
+  <div className="container">
+    <div className="row">
+      <div className="col text-center">
+        <a href="#!" className="btn btn-primary mt-5 py-2 px-4">Read More</a>
       </div>
     </div>
   </div>

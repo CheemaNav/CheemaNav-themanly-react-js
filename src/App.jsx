@@ -4,6 +4,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from "./pages/Layout.jsx";
 import Home from "./pages/Home.jsx";
 import NoPage from "./pages/NoPage.jsx";
+import React from 'react';
+
 import './App.css';
 
 function App() {
