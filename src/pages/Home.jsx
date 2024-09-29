@@ -33,7 +33,7 @@ const Home = () => {
                     <div className="row mt-4">
                         <div className="col-12 col-md-4 mb-4">
                             <div className="card">
-                                <img className="card-img-top" src="../../public/Ed.jpeg" alt="Card image cap"/>
+                                <img className="card-img-top" src="/public/Ed.jpeg" alt="Card image cap"/>
                                 <div className="card-body">
                                   <h5 className="card-title">Sexual Wellness</h5>
                                   <p className="card-text">At TheManly, we specialize in natural solutions for sexual wellness, focusing on premature ejaculation and erectile dysfunction issues.</p>
@@ -43,7 +43,7 @@ const Home = () => {
                         </div>
                         <div className="col-12 col-md-4 mb-4">
                             <div className="card">
-                                <img className="card-img-top" src="../../public/liver.jpeg" alt="Card image cap"/>
+                                <img className="card-img-top" src="/public/liver.jpeg" alt="Card image cap"/>
                                 <div className="card-body">
                                   <h5 className="card-title">Liver Health</h5>
                                   <p className="card-text">TheManly, targets male reproductive health with our 100% pure Ayurvedic treatments designed to optimize sperm health. Our natural formulations focus on improvingsperm count & motility through carefully selection of herbs.</p>
@@ -53,7 +53,7 @@ const Home = () => {
                         </div>
                         <div className="col-12 col-md-4 mb-4">
                             <div className="card">
-                                <img className="card-img-top" src="../../public/diabetes.jpeg" alt="Card image cap"/>
+                                <img className="card-img-top" src="/public/diabetes.jpeg" alt="Card image cap"/>
                                 <div className="card-body">
                                   <h5 className="card-title">Diabetes</h5>
                                   <p className="card-text">At TheManly, we provide comprehensive Ayurvedic treatments for managing diabetes naturally. Our formulations are tailored to balance blood sugar levels, promote insulin sensitivity, and support overall health through potent herbal solutions.</p>
@@ -63,7 +63,7 @@ const Home = () => {
                         </div>
                         <div className="col-12 col-md-4 mb-4">
                             <div className="card">
-                                <img className="card-img-top" src="../../public/hair.jpeg" alt="Card image cap"/>
+                                <img className="card-img-top" src="/public/hair.jpeg" alt="Card image cap"/>
                                 <div className="card-body">
                                   <h5 className="card-title">Hair Loss</h5>
                                   <p className="card-text">Our Experts specialize in natural treatments for hair loss, targeting root causes with adeptAyurvedic& 100% natural solutions.</p>
@@ -73,7 +73,7 @@ const Home = () => {
                         </div>
                         <div className="col-12 col-md-4 mb-4">
                             <div className="card">
-                                <img className="card-img-top" src="../../public/gut.jpeg" alt="Card image cap"/>
+                                <img className="card-img-top" src="/public/gut.jpeg" alt="Card image cap"/>
                                 <div className="card-body">
                                   <h5 className="card-title">Gut Health</h5>
                                   <p className="card-text">At TheManly, we offer holistic treatments to support liver health, usingAyurvedic principles for detoxification and rejuvenation. Our 100% natural remedies aim to cleanse and strengthen the liver, promoting overall wellness and vitality.</p>
@@ -83,7 +83,7 @@ const Home = () => {
                         </div>
                         <div className="col-12 col-md-4 mb-4">
                             <div className="card">
-                                <img className="card-img-top" src="../../public/Ed.jpeg" alt="Card image cap"/>
+                                <img className="card-img-top" src="/public/Ed.jpeg" alt="Card image cap"/>
                                 <div className="card-body">
                                   <h5 className="card-title">Stamina Building</h5>
                                   <p className="card-text">TheManly, empower men to build stamina naturally with time tested ayurvedic herbs & solutions. Our comprehensive approach mixesAyurvedic principles & modern science to increase endurance, strength</p>
@@ -253,7 +253,7 @@ const Home = () => {
           <div className="card border-0 bg-transparent">
             <figure className="card-img-top mb-4 overflow-hidden bsb-overlay-hover">
               <a href="#!">
-                <img className="img-fluid" loading="lazy" src="../../public/liver.jpeg" alt="Living" />
+                <img className="img-fluid" loading="lazy" src="/public/liver.jpeg" alt="Living" />
               </a>
    
             </figure>
@@ -291,7 +291,7 @@ const Home = () => {
           <div className="card border-0 bg-transparent">
             <figure className="card-img-top mb-4 overflow-hidden bsb-overlay-hover">
               <a href="#!">
-                <img className="img-fluid" loading="lazy" src="../../public/liver.jpeg" alt="Relationships" />
+                <img className="img-fluid" loading="lazy" src="/public/liver.jpeg" alt="Relationships" />
               </a>
          
             </figure>
@@ -329,7 +329,7 @@ const Home = () => {
           <div className="card border-0 bg-transparent">
             <figure className="card-img-top mb-4 overflow-hidden bsb-overlay-hover">
               <a href="#!">
-                <img className="img-fluid" loading="lazy" src="../../public/liver.jpeg" alt="Career" />
+                <img className="img-fluid" loading="lazy" src="/public/liver.jpeg" alt="Career" />
               </a>
             </figure>
             <div className="card-body m-0 p-0">

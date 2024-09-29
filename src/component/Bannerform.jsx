@@ -38,7 +38,7 @@ const Bannerform = () => {
         problemCategory: formData.problem 
       };
       // Submit the form data to the signup API
-      const response = await axios.post('https://api.themanly.in/api/themanly/auth/signup', submissionData, {
+      const response = await axios.post('/api/themanly/auth/signup', submissionData, {
         headers: {
           Authorization: " 1",  
           'DEVICE-TYPE': 'Web'
