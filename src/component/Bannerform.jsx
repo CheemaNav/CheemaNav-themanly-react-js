@@ -1,58 +1,87 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+import axios from '../api/axiosInstance';
+import { useFormik } from 'formik';
+import { bookAppointmentSchema } from '../utils/validations/FormValidation';
+import InputField from './common/InputFIeld';
+import SwalAlert from './common/SwalAlert';
+import SelectField from './common/SelectField';
+import TextArea from './common/TextArea';
+
+const problemOptions = [
+  "Erectile Dysfunction",
+  "⁠Early Ejaculation",
+  "Liver Health",
+  "⁠Diabetes",
+  "⁠Hair Fall",
+  "⁠Obesity",
+  "⁠Loss of Libido",
+  "⁠Low Sperm Count",
+  "⁠Stamina & Strength",
+  "⁠Low Testosterone",
+  "Other"
+];
 
 const Bannerform = () => {
-  const [formData, setFormData] = useState({
-    fullName: '',
-    email: '',
-    mobile: '',
-    age: '',
-    city: '',
-    problem: '',
-    userMessage: '',
-    provider: 'local', // Static field
-    userRole: 'ROLE_USER' // Static field
-  });
+
   const [otp, setOtp] = useState('');
   const [isOtpSent, setIsOtpSent] = useState(false);
   const [isOtpVerified, setIsOtpVerified] = useState(false);
-  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  // Handle form input changes
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value
-    }));
-  };
+  const formik = useFormik({
+    initialValues: {
+      fullName: '',
+      email: '',
+      mobile: '',
+      age: '',
+      city: '',
+      problem: '',
+      problem_other: '',
+      userMessage: '',
+      provider: 'local', // Static field
+      userRole: 'ROLE_USER' // Static field
+    },
+    validationSchema: bookAppointmentSchema,
+    enableReinitialize: true,
+    onSubmit: values => {
+      handleSubmit(values)
+    }
+  })
 
   // Handle form submission
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const handleSubmit = async (values) => {
     try {
-      setIsSubmitting(true);
 
       const submissionData = {
-        ...formData,
-        problemCategory: formData.problem 
+        ...values,
+        problemCategory: values.problem
       };
       // Submit the form data to the signup API
-      const response = await axios.post('/api/themanly/auth/signup', submissionData, {
+      const response = await axios.post('/auth/signup', submissionData, {
         headers: {
-          Authorization: " 1",  
+          Authorization: " 1",
           'DEVICE-TYPE': 'Web'
         }
       });
 
       if (response.status === 200) {
+
+        SwalAlert({
+          title: 'Success!',
+          message: 'Your form was successfully submitted.',
+          type: 'success',
+        });
         // On success, send OTP to the phone number
         setIsOtpSent(true);
-        setIsSubmitting(false);
       }
     } catch (error) {
       console.error('Error submitting form:', error);
-      setIsSubmitting(false);
+      SwalAlert({
+        title: 'Oops!',
+        message: 'Something went wrong. Please try again.',
+        type: 'error',
+      });
+    } finally {
+      formik.setSubmitting(false)
     }
   };
 
@@ -60,109 +89,93 @@ const Bannerform = () => {
   const handleOtpVerification = async () => {
     try {
       // Verify the OTP using the verifyOtp API
-      const response = await axios.post(`/api/themanly/auth/verifyOtp?channel=`, {
+      const response = await axios.post(`/auth/verifyOtp?channel=`, {
         otp,
-        mobile: formData.mobile
+        mobile: formik.values.mobile
       });
 
       if (response.status === 200) {
         // On successful OTP verification
         setIsOtpVerified(true);
-        alert('Form submitted successfully!');
+        SwalAlert({
+          title: 'Success!',
+          message: 'Form submitted successfully!',
+          type: 'success',
+        });
       }
     } catch (error) {
       console.error('Error verifying OTP:', error);
+      SwalAlert({
+        title: 'Oops!',
+        message: 'Something went wrong. Please try again.',
+        type: 'error',
+      });
     }
   };
 
   return (
     <>
-      <form className="row g-3 p-4 rounded border" onSubmit={handleSubmit}>
+      <form className="row g-3 p-4 rounded border" onSubmit={formik.handleSubmit}>
         <p className="fw-bold text-white text-center h6">Book your appointment @ just ₹ 499/-</p>
-        
-        <div className="col-md-6 col-12">
-          <label className="form-label">Name*</label>
-          <input
-            type="text"
-            className="form-control"
-            name="fullName"
-            value={formData.fullName}
-            onChange={handleChange}
-            required
-          />
-        </div>
 
-        <div className="col-md-6 col-12">
-          <label className="form-label">Email</label>
-          <input
-            type="email"
-            className="form-control"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-        </div>
+        <InputField
+          label="Name"
+          name="fullName"
+          type="text"
+          formik={formik}
+        />
+        <InputField
+          label="Email"
+          name="email"
+          type="text"
+          formik={formik}
+        />
+        <InputField
+          label="Phone Number"
+          name="mobile"
+          type="text"
+          formik={formik}
+        />
+        <InputField
+          label="Age"
+          name="age"
+          type="text"
+          formik={formik}
+        />
+        <InputField
+          label="City"
+          name="city"
+          type="text"
+          formik={formik}
+        />
 
-        <div className="col-md-6 col-12">
-          <label className="form-label">Phone Number</label>
-          <input
-            type="text"
-            className="form-control"
-            name="mobile"
-            value={formData.mobile}
-            onChange={handleChange}
-            required
-          />
-        </div>
+        <SelectField
+          label="Problem"
+          name="problem"
+          formik={formik}
+          options={problemOptions}
+        />
 
-        <div className="col-md-6 col-12">
-          <label className="form-label">Age</label>
-          <input
+        {formik?.values?.problem === "Other" && (
+          <TextArea
+            label="Other Problem"
+            name="problem_other"
             type="text"
-            className="form-control"
-            name="age"
-            value={formData.age}
-            onChange={handleChange}
+            formik={formik}
+            showError={true}
           />
-        </div>
+        )}
 
-        <div className="col-md-6 col-12">
-          <label className="form-label">City</label>
-          <input
-            type="text"
-            className="form-control"
-            name="city"
-            value={formData.city}
-            onChange={handleChange}
-          />
-        </div>
-
-        <div className="col-md-6 col-12">
-          <label className="form-label">Problem</label>
-          <input
-            type="text"
-            className="form-control"
-            name="problem"
-            value={formData.problem}
-            onChange={handleChange}
-          />
-        </div>
+        <TextArea
+          label="Your message"
+          name="userMessage"
+          type="text"
+          formik={formik}
+        />
 
         <div className="col-12">
-          <label className="form-label">Your message</label>
-          <textarea
-            className="form-control"
-            rows="3"
-            name="userMessage"
-            value={formData.userMessage}
-            onChange={handleChange}
-          ></textarea>
-        </div>
-
-        <div className="col-12">
-          <button className="btn btn-primary w-100 py-2" type="submit" disabled={isSubmitting}>
-            {isSubmitting ? 'Submitting...' : 'Submit'}
+          <button className="btn btn-primary w-100 py-2" type="submit" disabled={formik.isSubmitting || !formik.isValid}>
+            {formik.isSubmitting ? 'Submitting...' : 'Submit'}
           </button>
         </div>
       </form>
@@ -177,7 +190,7 @@ const Bannerform = () => {
             value={otp}
             onChange={(e) => setOtp(e.target.value)}
           />
-          <button className="btn btn-primary w-100 py-2 mt-2" onClick={handleOtpVerification}>
+          <button type='button' className="btn btn-primary w-100 py-2 mt-2" onClick={handleOtpVerification}>
             Verify OTP
           </button>
         </div>

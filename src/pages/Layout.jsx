@@ -1,5 +1,5 @@
-import { Outlet, Link } from "react-router-dom";
 import React from 'react';
+import { Outlet, Link } from "react-router-dom";
 import logo from"../../public/logo.webp"
 import footer_logo from"../../public/footer_logo.png";
 

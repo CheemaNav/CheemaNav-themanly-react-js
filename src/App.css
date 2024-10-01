@@ -146,6 +146,9 @@ section.treat_sec img { height: 230px; object-fit: cover; object-position: top; 
 /* .review_Sec { background: #003a5c !important; } */
 section.review_Sec .card-body.card { background: #fff; padding-top: 30px;border-color: #00466e !important; border-radius: 22px;}
 section.review_Sec .card-body.card .lead { font-size: 15px;   font-family: 'rocaone-ltregular'; }
+section.review_Sec .card-body.card .lead { font-size: 15px;   font-family: 'rocaone-ltregular'; }
+.text-truncate-box { -webkit-line-clamp: 5; display: -webkit-box; -webkit-box-orient: vertical;  overflow: hidden;}
+
 section.review_Sec .card-body.card p{color: #000 !important;}
 section.review_Sec .col-md-12 { padding: 10px; }
 .review_Sec .slick-prev:before, .review_Sec .slick-next:before { background: #003451; width: 42px; height: 42px; display: flex; border-radius: 50%; align-items: center; justify-content: center; font-size: 26px; padding-top: 6px; font-family: unset;}
