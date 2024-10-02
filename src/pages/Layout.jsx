@@ -8,7 +8,7 @@ function Layout() {
    <>
     <header className="py-3">
      <div className="container">
-     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+     <nav class="navbar navbar-expand-lg navbar-light p-0">
   <Link href="/" className="d-flex align-items-center">
                 <img className="logo" alt="logo" src={logo}/>
             </Link>
@@ -55,7 +55,7 @@ function Layout() {
             <a href="#"><img className=" mb-4 logo" src={footer_logo} /></a>
            
             <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Welcome to the holistic wellness programme designed just for YOU !!
             </p>
           </div>
  
