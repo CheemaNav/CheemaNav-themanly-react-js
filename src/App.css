@@ -188,6 +188,8 @@ table{border: 1px solid #ddd;}
 table thead th{font-weight: 600; background: #eee !important;}
 table th, table td{border: 1px solid #ddd;}
 
+.form-control { min-height: 36px; }
+
 @media only screen and (max-width: 767px) {
     .slick-next{right: 10px; z-index: 9;}
     .slick-prev { left: 10px;z-index: 9;}  
