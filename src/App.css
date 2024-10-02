@@ -120,6 +120,7 @@ h1, h2, h3, h4, h5, h6, strong{font-family: 'rocaone-blitregular';}
 .text-primary{color: #084060 !important;}
 header img.logo { width: 140px;}
 header ul.navbar-nav svg { margin-right: 5px; position: relative; top: -1px; }
+header li.nav-item a.nav-link { color: #111; }
 
 .banner form .invalid-feedback { display: none; }
 .banner h1 { font-family: unset !important; }
