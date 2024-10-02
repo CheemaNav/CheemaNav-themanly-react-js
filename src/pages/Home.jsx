@@ -15,7 +15,9 @@ const Home = () => {
             <div className="row justify-content-between align-items-center">
               <div class="col-12 col-md-6 mt-5 pt-5">
                 <h1 class="text-white h5">
-                  <strong class="d-block mb-0 h1"> Reboot</strong><strong class="d-block mb-2 h1"> yourself </strong>The holistic wellness programme designed for Men!!</h1></div>
+                  <strong class="d-block mb-0 h1"> Reboot</strong><strong class="d-block mb-2 h1"> yourself </strong>The holistic wellness programme designed for Men!!</h1>
+                  <img className="Guaranteed" src="./images/guaranteed.png" alt="Guaranteed" />
+                  </div>
 
               {/* <div className="col-12 col-md-6">
                             <h1 className="text-white h3">
@@ -41,6 +43,16 @@ const Home = () => {
           <div className="treat_inner">
             <h2 className='text-center pb-2'>What we treat?</h2>
             <div className="row mt-4">
+            <div className="col-12 col-md-4 mb-4">
+                <div className="card">
+                  <img className="card-img-top" src="./images/ED.jpeg" alt="Card image cap" />
+                  <div className="card-body">
+                    <h5 className="card-title">Sexual Wellness</h5>
+                    <p className="card-text">Address men’s health issues such as Erectile Dysfunction (ED) and Premature Ejaculation (PME), Sperm Mortality, Loss of Libido and others with our targeted therapies.</p>
+
+                  </div>
+                </div>
+              </div>
               <div className="col-12 col-md-4 mb-4">
                 <div className="card">
                   <img className="card-img-top" src="./images/liver.jpeg" alt="Card image cap" />
@@ -55,7 +67,7 @@ const Home = () => {
                 <div className="card">
                   <img className="card-img-top" src="./images/gut.jpeg" alt="Card image cap" />
                   <div className="card-body">
-                    <h5 className="card-title">Gut Issues</h5>
+                    <h5 className="card-title">Gut Issue</h5>
                     <p className="card-text">Enhance your digestive health and balance your Agni (digestive fire) with our tailored treatments.</p>
 
                   </div>
@@ -73,9 +85,9 @@ const Home = () => {
               </div>
               <div className="col-12 col-md-4 mb-4">
                 <div className="card">
-                  <img className="card-img-top" src="./images/ED.jpeg" alt="Card image cap" />
+                  <img className="card-img-top" src="./images/Energy.jpeg" alt="Card image cap" />
                   <div className="card-body">
-                    <h5 className="card-title">Energy, Stamina & Immunity Booster</h5>
+                    <h5 className="card-title">Boosting Stamina & Testosterone</h5>
                     <p className="card-text">Revitalize your energy levels and enhance stamina naturally.</p>
 
                   </div>
@@ -91,21 +103,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-12 col-md-4 mb-4">
-                <div className="card">
-                  <img className="card-img-top" src="./images/ED.jpeg" alt="Card image cap" />
-                  <div className="card-body">
-                    <h5 className="card-title">Sexual Wellness</h5>
-                    <p className="card-text">Address men’s health issues such as Erectile Dysfunction (ED) and Premature Ejaculation (PME), Sperm Mortality, Loss of Libido and others with our targeted therapies.</p>
-
-                  </div>
-                </div>
-              </div>
-
-
-
-
-
+            
             </div>
             <div className='text-center mt-3'>
               <a href="#form" className="btn btn-primary mx-auto">Book an Appointment</a>
@@ -157,11 +155,47 @@ const Home = () => {
         <div className='container'>
           <div className='row align-items-center'>
             <div className='col-12 col-md-6'>
-              <h2 className='h1 fw-bold text-white'>Let's connect in a confidential and safe space.</h2>
+              <h2 className='h1 fw-bold text-white'>Let's connect to our experts.</h2>
+              <p className='text-white h5'>They have treated more than 20 thousand parents.</p>
               <a href='#' className='btn btn-light mt-4'> Start your treatment </a>
             </div>
             <div className='col-12 col-md-6'>
-              <img className='w-100' src='' />
+              <div className='d-flex gap-2'>
+              <div className='col-4 h-100'>
+                    <div className='card h-100'>
+                      <div className='card-body p-0 text-center h-100'>
+                         <img className='w-100' src='/images/DrM.jpg' />
+                         <p className='mb-0 p-3 px-1'>
+                         <strong className='d-block mb-1 h6'>Dr. Manjari Chandra</strong>
+                         Advisor & Clinical Nutritionist 
+                         </p>
+                      </div>
+                    </div>
+                </div>
+                <div className='col-4 h-100'>
+                    <div className='card h-100'>
+                      <div className='card-body p-0 text-center h-100'>
+                         <img className='w-100' src='/images/DrA.jpg' />
+                         <p className='mb-0 p-3 h6 px-1'>
+                         <strong className='d-block mb-1 h6'>Dr. Atul Bhatnagar</strong>
+                         MS in Ayurveda
+                         </p>
+                      </div>
+                    </div>
+                </div>
+                <div className='col-4 h-100'>
+                    <div className='card h-100'>
+                      <div className='card-body p-0 text-center h-100'>
+                         <img className='w-100' src='/images/DrD.jpg' />
+                         <p className='mb-0 p-3 h6 px-1'>
+                         <strong className='d-block mb-1 h6'>Dr. Gautam</strong>
+                         Naturopath & Ayurveda Expert
+                         </p>
+                      </div>
+                    </div>
+                </div>
+               
+              </div>
             </div>
           </div>
         </div>
