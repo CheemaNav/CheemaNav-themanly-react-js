@@ -71,7 +71,7 @@ function Layout() {
    
           <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-2">
  
-            <a href="#"><img className=" mb-4 logo" src={footer_logo} /></a>
+            <a href="#"><img className=" mb-3 logo" src={footer_logo} /></a>
            
             <p>
             All about Men's wellmess
