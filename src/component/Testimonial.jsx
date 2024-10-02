@@ -86,10 +86,10 @@ const Testimonial = () => {
                         <Slider {...settings}>
                             <div className='col-md-12 mb-4 h-100'>
                                 <div className='card-body card h-100'>
-                                    <div className="d-flex justify-content-center mb-0">
+                                    {/* <div className="d-flex justify-content-center mb-0">
                                       
                                         <Avatar name="Rajesh" />
-                                    </div>
+                                    </div> */}
                                     <p className="lead text-truncate-box my-3 text-white">
                                         “I’ve been using Diaease for the past six months, and the results have been remarkable. My blood sugar levels are more stable, and I feel more energetic throughout the day. This Ayurvedic solution has truly transformed my diabetes management. Highly recommended!”
                                     </p>
@@ -98,10 +98,10 @@ const Testimonial = () => {
                             </div>
                             <div className="col-md-12 mb-0 h-100">
                                 <div className='card card-body h-100'>
-                                    <div className="d-flex justify-content-center mb-0">
+                                    {/* <div className="d-flex justify-content-center mb-0">
                                        
                                         <Avatar name="Ravi" />
-                                    </div>
+                                    </div> */}
                                     <p className="lead text-truncate-box my-3 text-white">
                                         “Since I started using ROVER, my energy and endurance have improved significantly. I can now get through my day without feeling exhausted. Highly recommended!”
                                     </p>
@@ -110,10 +110,10 @@ const Testimonial = () => {
                             </div>
                             <div className='col-md-12 mb-4 h-100'>
                                 <div className='card-body card h-100'>
-                                    <div className="d-flex justify-content-center mb-0">
+                                    {/* <div className="d-flex justify-content-center mb-0">
                                        
                                         <Avatar name="Sameer" />
-                                    </div>
+                                    </div> */}
                                     <p className="lead text-truncate-box my-3 text-white">
                                         “I found the TheManly.In experts as the best. I got relief from ED problem within month. TheManly.in & its experts are highly recommended”
                                     </p>
@@ -122,14 +122,26 @@ const Testimonial = () => {
                             </div>
                             <div className="col-md-12 mb-0 h-100">
                                 <div className='card card-body h-100'>
-                                    <div className="d-flex justify-content-center mb-0">
+                                    {/* <div className="d-flex justify-content-center mb-0">
                                      
                                         <Avatar name="Vijay" />
-                                    </div>
+                                    </div> */}
                                     <p className="lead text-truncate-box my-3 text-white">
                                         “Using Diaease has been a turning point in my diabetes journey. My overall health has improved, and I feel more in control of my condition. This Ayurvedic medicine is truly effective and reliable.”
                                     </p>
                                     <p className="font-italic font-weight-normal mb-0 text-white">Vijay Yadav - 52 Yrs</p>
+                                </div>
+                            </div>
+                            <div className="col-md-12 mb-0 h-100">
+                                <div className='card card-body h-100'>
+                                    {/* <div className="d-flex justify-content-center mb-0">
+                                     
+                                        <Avatar name="Vijay" />
+                                    </div> */}
+                                    <p className="lead text-truncate-box my-3 text-white">
+                                        “Thank you themanly.in. You guys helped us and saved our relationship. My husband was hesitant for his ED & PME issue, and I contacted themanly.in and I am thankful how effectively they have handled his case with personal care and effective treatment that lasted for 6 months. I recommend themanly.in to the men who are suffering from such issues.”
+                                    </p>
+                                    <p className="font-italic font-weight-normal mb-0 text-white">Bhavana - 29 Yrs</p>
                                 </div>
                             </div>
                         </Slider>

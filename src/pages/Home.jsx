@@ -216,8 +216,8 @@ const Home = () => {
               <div className="card text-center h-100">
                 <div className='cardimg'><img className="card-img-top" src="./images/leader.png" alt="Card image cap" /> </div>
                 <div className="card-body">
-                  <h5 className="card-title">Team of Expert</h5>
-                  <p className="card-text">Our team consists of highly qualified Ayurvedic doctors with years of experience.</p>
+                  <h5 className="card-title">Team of Experts</h5>
+                  <p className="card-text">Trust you are in safe hands. they have treated more then 20,000 patients.</p>
 
                 </div>
               </div>
