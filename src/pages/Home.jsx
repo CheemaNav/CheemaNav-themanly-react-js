@@ -168,7 +168,7 @@ const Home = () => {
             </div>
             <div className='col-12 col-md-6'>
             <div className='row'>
-  <div className='col-12 col-md-4 d-flex'>
+  <div className='col-12 col-md-4 d-flex mb-4 mb-md-0'>
     <div className='card h-100 flex-grow-1'>
       <div className='card-body p-0 text-center d-flex flex-column'>
         <img className='w-100' src='/images/DrM.jpg' alt="Dr. Manjari Chandra" />
@@ -181,7 +181,7 @@ const Home = () => {
       </div>
     </div>
   </div>
-  <div className='col-12 col-md-4 d-flex'>
+  <div className='col-12 col-md-4 d-flex mb-4 mb-md-0'>
     <div className='card h-100 flex-grow-1'>
       <div className='card-body p-0 text-center d-flex flex-column'>
         <img className='w-100' src='/images/DrA.jpg' alt="Dr. Atul Bhargava" />
@@ -194,7 +194,7 @@ const Home = () => {
       </div>
     </div>
   </div>
-  <div className='col-12 col-md-4 d-flex'>
+  <div className='col-12 col-md-4 d-flex '>
     <div className='card h-100 flex-grow-1'>
       <div className='card-body p-0 text-center d-flex flex-column'>
         <img className='w-100' src='/images/DrD.jpg' alt="Dr. Gautam" />
@@ -218,7 +218,7 @@ const Home = () => {
   <div className='container'>
     <h2 className="text-center pb-0 mb-0">Why Choose TheManly.in?</h2>
     <div className='row py-4 position-relative mb-4'>
-      <div className="col-12 col-md-3 d-flex">
+      <div className="col-12 col-md-3 d-flex mb-3 mb-md-0">
         <div className="card text-center flex-grow-1">
           <div className='cardimg'><img className="card-img-top" src="./images/leader.png" alt="Card image cap" /> </div>
           <div className="card-body">
@@ -227,7 +227,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="col-12 col-md-3 d-flex">
+      <div className="col-12 col-md-3 d-flex mb-3 mb-md-0">
         <div className="card text-center flex-grow-1">
           <div className='cardimg'> <img className="card-img-top" src="./images/organic.png" alt="Card image cap" /></div>
           <div className="card-body">
@@ -236,7 +236,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="col-12 col-md-3 d-flex">
+      <div className="col-12 col-md-3 d-flex mb-3 mb-md-0">
         <div className="card text-center flex-grow-1">
           <div className='cardimg'> <img className="card-img-top" src="./images/bot.png" alt="Card image cap" /></div>
           <div className="card-body">

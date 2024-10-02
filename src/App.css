@@ -191,6 +191,12 @@ table th, table td{border: 1px solid #ddd;}
 @media only screen and (max-width: 767px) {
     .slick-next{right: 10px; z-index: 9;}
     .slick-prev { left: 10px;z-index: 9;}  
+    .banner h1 strong {font-size: 36px;}
+    .banner form{margin-top: 30px;}
+    .banner img.Guaranteed{margin-top: 0;}
+    .expert_sec .col { flex: 100% !important; }
+    .expert_sec img.Guaranteed { margin-bottom: 40px; margin-top: 20px; position: unset; }
+    footer.bg-dark .bottom_footer .container.d-flex { flex-direction: column; gap: 10px; }
 
 }
 
