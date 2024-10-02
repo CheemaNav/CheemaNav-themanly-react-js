@@ -118,6 +118,8 @@ h1, h2, h3, h4, h5, h6, strong{font-family: 'rocaone-blitregular';}
 .btn-primary{background-color: #084060 !important; border-color:#084060 !important;}
 .btn-primary:hover{background-color: #02263b !important; border-color:#02263b !important;}
 .text-primary{color: #084060 !important;}
+
+header.active { position: fixed; top: 0; width: 100%; z-index: 9; background: #fff; }
 header img.logo { width: 140px;}
 header ul.navbar-nav svg { margin-right: 5px; position: relative; top: -1px; }
 header li.nav-item a.nav-link { color: #111; }
@@ -177,7 +179,7 @@ footer a:hover{opacity: 0.7; color: #fff;}
 
 .expert_sec .card { overflow: hidden; border-radius: 12px; padding: 0; }
 .expert_sec .card img { height: 180px; object-fit: cover; }
-.expert_sec .card p { font-size: 12px; font-family: roboto; font-weight: 400; }
+.expert_sec .card p { font-size: 14px; font-family: roboto; font-weight: 400; }
 .expert_sec img.Guaranteed { width: 170px; position: relative; top: 30px; transform: rotate(-15deg); }
 
 

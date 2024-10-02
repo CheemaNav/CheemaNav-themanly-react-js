@@ -93,7 +93,7 @@ const Bannerform = () => {
       title: 'Enter OTP sent to your phone',
       html: `
         <label>Enter OTP sent to your phone</label>
-        <input type="text" id="otp-input" class="swal2-input" placeholder="Enter OTP">
+        <input type="text" id="otp-input" className="swal2-input" placeholder="Enter OTP">
       `,
       confirmButtonText: 'Verify OTP',
       showCancelButton: true,
