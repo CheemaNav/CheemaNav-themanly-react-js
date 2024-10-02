@@ -156,7 +156,7 @@ const Home = () => {
           <div className='row align-items-center'>
             <div className='col-12 col-md-6'>
               <h2 className='h1 fw-bold text-white'>Let's connect to our experts.</h2>
-              <p className='text-white h5'>They have treated more than 20 thousand parents.</p>
+              <p className='text-white h5'>They have treated more than 20 thousand patients.</p>
               <div className='row'>
                 <div className='col'>
                    <a href='#' className='btn btn-light mt-4'> Start Your Treatment </a>
@@ -167,7 +167,7 @@ const Home = () => {
               </div>
             </div>
             <div className='col-12 col-md-6'>
-              <div className='d-flex gap-2'>
+              <div className='d-flex gap-3'>
               <div className='col-4 h-100'>
                     <div className='card h-100'>
                       <div className='card-body p-0 text-center h-100'>
@@ -216,7 +216,7 @@ const Home = () => {
               <div className="card text-center">
                 <div className='cardimg'><img className="card-img-top" src="./images/leader.png" alt="Card image cap" /> </div>
                 <div className="card-body">
-                  <h5 className="card-title">Team of Expertise</h5>
+                  <h5 className="card-title">Team of Expert</h5>
                   <p className="card-text">Our team consists of highly qualified Ayurvedic doctors with years of experience.</p>
 
                 </div>
