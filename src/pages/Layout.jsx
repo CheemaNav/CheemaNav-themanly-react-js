@@ -55,7 +55,7 @@ function Layout() {
             <a href="#"><img className=" mb-4 logo" src={footer_logo} /></a>
            
             <p>
-            Welcome to the holistic wellness programme designed just for YOU !!
+            All about Men's wellmess
             </p>
           </div>
  

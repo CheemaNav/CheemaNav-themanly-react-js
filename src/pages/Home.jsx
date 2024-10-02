@@ -353,7 +353,7 @@ const Home = () => {
       </section>
 
 
-      <section className="space_60 blog_sec">
+      {/* <section className="space_60 blog_sec">
         <h2 className='text-center pb-2'>Blogs</h2>
         <div className="container overflow-hidden">
           <div className="row gy-4 gy-md-5 gx-xl-6 gy-xl-6 gx-xxl-9 gy-xxl-9">
@@ -481,10 +481,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
-
-
-
+      </section> */}
 
 
     </>
