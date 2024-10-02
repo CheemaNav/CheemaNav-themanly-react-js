@@ -38,7 +38,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className='treat_sec space_60'>
+      <section className='treat_sec space_60' id='Treatments'>
         <div className='container'>
           <div className="treat_inner">
             <h2 className='text-center pb-2'>What we treat?</h2>
@@ -151,7 +151,7 @@ const Home = () => {
             </div>
         </section> */}
 
-      <section className='py-5 bg-primary expert_sec story_sec'>
+      <section className='py-5 bg-primary expert_sec story_sec' id='Experts'>
         <div className='container'>
           <div className='row align-items-center'>
             <div className='col-12 col-md-6'>
@@ -167,96 +167,99 @@ const Home = () => {
               </div>
             </div>
             <div className='col-12 col-md-6'>
-              <div className='d-flex gap-3'>
-              <div className='col-4 h-100'>
-                    <div className='card h-100'>
-                      <div className='card-body p-0 text-center h-100'>
-                         <img className='w-100' src='/images/DrM.jpg' />
-                         <p className='mb-0 p-3 px-1'>
-                         <strong className='d-block mb-1 h6'>Dr. Manjari Chandra</strong>
-                         Advisor & Clinical Nutritionist 
-                         </p>
-                      </div>
-                    </div>
-                </div>
-                <div className='col-4 h-100'>
-                    <div className='card h-100'>
-                      <div className='card-body p-0 text-center h-100'>
-                         <img className='w-100' src='/images/DrA.jpg' />
-                         <p className='mb-0 p-3 h6 px-1'>
-                         <strong className='d-block mb-1 h6'>Dr. Atul Bhargava</strong>
-                         MS in Ayurveda
-                         </p>
-                      </div>
-                    </div>
-                </div>
-                <div className='col-4 h-100'>
-                    <div className='card h-100'>
-                      <div className='card-body p-0 text-center h-100'>
-                         <img className='w-100' src='/images/DrD.jpg' />
-                         <p className='mb-0 p-3 h6 px-1'>
-                         <strong className='d-block mb-1 h6'>Dr. Gautam</strong>
-                         Naturopath & Ayurveda Expert
-                         </p>
-                      </div>
-                    </div>
-                </div>
-               
-              </div>
+            <div className='row'>
+  <div className='col-12 col-md-4 d-flex'>
+    <div className='card h-100 flex-grow-1'>
+      <div className='card-body p-0 text-center d-flex flex-column'>
+        <img className='w-100' src='/images/DrM.jpg' alt="Dr. Manjari Chandra" />
+        <div className='flex-grow-1 d-flex flex-column justify-content-start'>
+          <p className='mb-0 p-3 px-1'>
+            <strong className='d-block mb-1 h6'>Dr. Manjari Chandra</strong>
+            Advisor & Clinical Nutritionist
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div className='col-12 col-md-4 d-flex'>
+    <div className='card h-100 flex-grow-1'>
+      <div className='card-body p-0 text-center d-flex flex-column'>
+        <img className='w-100' src='/images/DrA.jpg' alt="Dr. Atul Bhargava" />
+        <div className='flex-grow-1 d-flex flex-column justify-content-start'>
+          <p className='mb-0 p-3 px-1'>
+            <strong className='d-block mb-1 h6'>Dr. Atul Bhargava</strong>
+            MS in Ayurveda
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div className='col-12 col-md-4 d-flex'>
+    <div className='card h-100 flex-grow-1'>
+      <div className='card-body p-0 text-center d-flex flex-column'>
+        <img className='w-100' src='/images/DrD.jpg' alt="Dr. Gautam" />
+        <div className='flex-grow-1 d-flex flex-column justify-content-start'>
+          <p className='mb-0 p-3 px-1'>
+            <strong className='d-block mb-1 h6'>Dr. Gautam</strong>
+            Naturopath & Ayurveda Expert
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
             </div>
           </div>
         </div>
       </section>
 
       <section className='mt-5 whycho_Sec'>
-        <div className='container'>
-          <h2 className="text-center pb-0 mb-0">Why Choose TheManly.in?</h2>
-          <div className='row py-4 position-relative mb-4'>
-            <div className="col-12 col-md-3 h-100">
-              <div className="card text-center h-100">
-                <div className='cardimg'><img className="card-img-top" src="./images/leader.png" alt="Card image cap" /> </div>
-                <div className="card-body">
-                  <h5 className="card-title">Team of Experts</h5>
-                  <p className="card-text">Trust you are in safe hands. they have treated more than 20000 patients.</p>
-
-                </div>
-              </div>
-            </div>
-            <div className="col-12 col-md-3 h-100">
-              <div className="card text-center h-100">
-                <div className='cardimg'> <img className="card-img-top" src="./images/organic.png" alt="Card image cap" /></div>
-                <div className="card-body">
-                  <h5 className="card-title">100% Natural Products</h5>
-                  <p className="card-text">We use only the finest natural ingredients, sourced sustainably.</p>
-
-                </div>
-              </div>
-            </div>
-            <div className="col-12 col-md-3 h-100">
-              <div className="card text-center h-100">
-                <div className='cardimg'> <img className="card-img-top" src="./images/bot.png" alt="Card image cap" /></div>
-                <div className="card-body">
-                  <h5 className="card-title">Customised Treatment</h5>
-                  <p className="card-text">Our treatments are tailored to meet your unique health needs.</p>
-
-                </div>
-              </div>
-            </div>
-            <div className="col-12 col-md-3 h-100">
-              <div className="card text-center h-100">
-                <div className='cardimg'>
-                  <img className="card-img-top" src="./images/check.png" alt="Card image cap" />
-                </div>
-                <div className="card-body">
-                  <h5 className="card-title">100% Privacy</h5>
-                  <p className="card-text">We assure our patients to maintain 100% privacy of their treatment.</p>
-
-                </div>
-              </div>
-            </div>
+  <div className='container'>
+    <h2 className="text-center pb-0 mb-0">Why Choose TheManly.in?</h2>
+    <div className='row py-4 position-relative mb-4'>
+      <div className="col-12 col-md-3 d-flex">
+        <div className="card text-center flex-grow-1">
+          <div className='cardimg'><img className="card-img-top" src="./images/leader.png" alt="Card image cap" /> </div>
+          <div className="card-body">
+            <h5 className="card-title">Team of Experts</h5>
+            <p className="card-text">Trust you are in safe hands. they have treated more than 20000 patients.</p>
           </div>
         </div>
-      </section>
+      </div>
+      <div className="col-12 col-md-3 d-flex">
+        <div className="card text-center flex-grow-1">
+          <div className='cardimg'> <img className="card-img-top" src="./images/organic.png" alt="Card image cap" /></div>
+          <div className="card-body">
+            <h5 className="card-title">100% Natural Products</h5>
+            <p className="card-text">We use only the finest natural ingredients, sourced sustainably.</p>
+          </div>
+        </div>
+      </div>
+      <div className="col-12 col-md-3 d-flex">
+        <div className="card text-center flex-grow-1">
+          <div className='cardimg'> <img className="card-img-top" src="./images/bot.png" alt="Card image cap" /></div>
+          <div className="card-body">
+            <h5 className="card-title">Customised Treatment</h5>
+            <p className="card-text">Our treatments are tailored to meet your unique health needs.</p>
+          </div>
+        </div>
+      </div>
+      <div className="col-12 col-md-3 d-flex">
+        <div className="card text-center flex-grow-1">
+          <div className='cardimg'>
+            <img className="card-img-top" src="./images/check.png" alt="Card image cap" />
+          </div>
+          <div className="card-body">
+            <h5 className="card-title">100% Privacy</h5>
+            <p className="card-text">We assure our patients to maintain 100% privacy of their treatment.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* <section className='mt-5 mb-5'>
             <div className='container'>
@@ -276,7 +279,7 @@ const Home = () => {
 
       <Testimonial />
 
-      <section className='faq_sec space_60 '>
+      <section className='faq_sec space_60' id='faq'>
         <div className='container'>
           <div className="treat_inner">
             <h2 className='text-center pb-2'>Frequently Asked Questions</h2>

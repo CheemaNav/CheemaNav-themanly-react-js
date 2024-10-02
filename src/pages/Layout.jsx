@@ -28,7 +28,7 @@ function Layout() {
    <header className={`py-3 ${isScrolled ? 'active' : ''}`}>
      <div className="container">
      <nav className="navbar navbar-expand-lg navbar-light p-0">
-  <Link href="/" className="d-flex align-items-center">
+  <Link to="/" className="d-flex align-items-center">
                 <img className="logo" alt="logo" src={logo}/>
             </Link>
   <div className="collapse navbar-collapse justify-content-end" id="navbarText">
@@ -71,7 +71,7 @@ function Layout() {
    
           <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-2">
  
-            <a href="#"><img className=" mb-3 logo" src={footer_logo} /></a>
+            <Link to="/"><img className=" mb-3 logo" src={footer_logo} /></Link>
            
             <p>
             All about Men's wellmess
@@ -83,19 +83,19 @@ function Layout() {
             <h6 className="text-uppercase fw-bold mb-4">Quick Links</h6>
           
             <p>
-              <a href="#!" className="text-white">Home</a>
+              <a href="#form" className="text-white">Home</a>
             </p>
             <p>
-              <a href="#!" className="text-white">About Us</a>
+              <a href="#form" className="text-white">Book Appointment</a>
             </p>
             <p>
-              <a href="#!" className="text-white">Treatments</a>
+              <a href="#Treatments" className="text-white">Treatments</a>
             </p>
             <p>
-              <a href="#!" className="text-white">Experts</a>
+              <a href="#Experts" className="text-white">Our Experts</a>
             </p>
             <p>
-              <a href="#!" className="text-white">Blogs</a>
+              <a href="#faq" className="text-white">FAQ</a>
             </p>
           </div>
       
@@ -119,9 +119,17 @@ function Layout() {
       </div>
     </section>
 
-    <div className="text-center p-3 bottom_footer">
-    Copyright ©  
-      <a className="text-white" href="https://themanly.in"> Themanly 2024 </a> All Rights Reserved.
+    <div className="p-3 bottom_footer">
+        <div className='container d-flex align-items-center justify-content-between'>
+          <p className='mb-0'>
+          Copyright ©  
+          <a className="text-white" href="https://themanly.in"> Themanly 2024 </a> All Rights Reserved.
+          </p>
+          <div className='links'>
+             <Link to="/Termsconditions" className="text-white me-5">Terms & Conditions</Link>
+             <Link to="/Privacypolicy" className="text-white">Privacy Policy</Link>
+          </div>
+        </div>
     </div>
   </footer>
 
