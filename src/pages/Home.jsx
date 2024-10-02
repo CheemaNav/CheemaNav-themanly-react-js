@@ -156,7 +156,7 @@ const Home = () => {
           <div className='row align-items-center'>
             <div className='col-12 col-md-6'>
               <h2 className='h1 fw-bold text-white'>Let's connect to our experts.</h2>
-              <p className='text-white h5'>They have treated more than 20 thousand patients.</p>
+              <p className='text-white h5'>They have treated more than 20000 patients.</p>
               <div className='row'>
                 <div className='col'>
                    <a href='#' className='btn btn-light mt-4'> Start Your Treatment </a>
@@ -217,7 +217,7 @@ const Home = () => {
                 <div className='cardimg'><img className="card-img-top" src="./images/leader.png" alt="Card image cap" /> </div>
                 <div className="card-body">
                   <h5 className="card-title">Team of Experts</h5>
-                  <p className="card-text">Trust you are in safe hands. they have treated more then 20,000 patients.</p>
+                  <p className="card-text">Trust you are in safe hands. they have treated more than 20000 patients.</p>
 
                 </div>
               </div>
