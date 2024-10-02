@@ -157,7 +157,14 @@ const Home = () => {
             <div className='col-12 col-md-6'>
               <h2 className='h1 fw-bold text-white'>Let's connect to our experts.</h2>
               <p className='text-white h5'>They have treated more than 20 thousand parents.</p>
-              <a href='#' className='btn btn-light mt-4'> Start your treatment </a>
+              <div className='row'>
+                <div className='col'>
+                   <a href='#' className='btn btn-light mt-4'> Start Your Treatment </a>
+                </div>
+                <div className='col'>
+                  <img className="Guaranteed" src="./images/guaranteed.png" alt="Guaranteed" />
+                </div>
+              </div>
             </div>
             <div className='col-12 col-md-6'>
               <div className='d-flex gap-2'>
