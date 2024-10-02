@@ -177,7 +177,7 @@ const Bannerform = () => {
   return (
     <>
       <form className="row g-3 p-4 rounded border" onSubmit={formik.handleSubmit}>
-        <p className="fw-bold text-white text-center h5 mb-0">Reboot yourself with us, <span className='d-block'>start your wellness journey today</span></p>
+        <p className="fw-bold text-white text-center h5 mb-0"><span className='d-block'>start your wellness journey today</span></p>
         <small className='text-center text-white mt-2'>
         Please share this short information about yourself and our experts will reach out to you very soon.
         </small>

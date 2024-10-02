@@ -122,7 +122,9 @@ header img.logo { width: 140px;}
 header ul.navbar-nav svg { margin-right: 5px; position: relative; top: -1px; }
 
 .banner form .invalid-feedback { display: none; }
-.banner{background: url(../public/banner.jpg) no-repeat center / cover;  background-position: top right; position: relative;padding-block: 60px;min-height: 90vh; padding-top: 80px;}
+.banner h1 { font-family: unset !important; }
+.banner h1 strong { font-size: 62px; font-family: unset !important; text-transform: uppercase; }
+.banner{background: url(../public/banner.jpg) no-repeat center / cover;  background-position: top right; position: relative;padding-block: 50px;min-height: 90vh;}
 /* section.banner:before { content: ''; background: #00000075; width: 100%; height: 100%; position: absolute; top: 0; left: 0; } */
 .banner form { background: #00000033; border-color: #72767a !important; border-radius: 20px !important;    padding: 15px 15px 20px !important; }
 .banner .row{position: relative;}
