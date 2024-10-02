@@ -184,7 +184,7 @@ const Home = () => {
                       <div className='card-body p-0 text-center h-100'>
                          <img className='w-100' src='/images/DrA.jpg' />
                          <p className='mb-0 p-3 h6 px-1'>
-                         <strong className='d-block mb-1 h6'>Dr. Atul Bhatnagar</strong>
+                         <strong className='d-block mb-1 h6'>Dr. Atul Bhargava</strong>
                          MS in Ayurveda
                          </p>
                       </div>
