@@ -13,11 +13,10 @@ export const bookAppointmentSchema = Yup.object().shape({
     .min(10, 'Mobile number must be at least 10 digits')
     .max(15, 'Mobile number can be up to 15 digits')
     .required(requiredMsg),
-  age: Yup.number()
-    .required(requiredMsg),
-  city: Yup.string()
-    .matches(alphabetsRegex, 'City name can only contain alphabets and spaces')
-    .required(requiredMsg),
+  age: Yup.string() // Changed to string and removed required validation
+    .optional(), // Age is optional
+  city: Yup.string() // Changed to string and removed required validation
+    .optional(), // City is optional
   problem: Yup.string()
     .required(requiredMsg),
   problem_other: Yup.string().when('problem', (problemValue, schema) => {
