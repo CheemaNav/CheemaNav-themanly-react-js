@@ -61,8 +61,8 @@ const Testimonial = () => {
             <span
                 className="rounded-circle bg-primary d-flex align-items-center justify-content-center"
                 style={{
-                    width: '100px', // Fixed width
-                    height: '100px', // Fixed height
+                    width: '80px', // Fixed width
+                    height: '80px', // Fixed height
                     fontSize: '36px', // Adjust font size as needed
                     color: '#fff', // Text color
                 }}
@@ -78,7 +78,7 @@ const Testimonial = () => {
                 <div className='container'>
                     <div className="row d-flex justify-content-center">
                         <div className="col-md-10 col-xl-8 text-center">
-                            <h3 className="mb-3 text-white">Testimonials</h3>
+                            <h3 className="mb-3 text-white">What do our patients say about us</h3>
                         </div>
                     </div>
 
@@ -86,9 +86,8 @@ const Testimonial = () => {
                         <Slider {...settings}>
                             <div className='col-md-12 mb-4 h-100'>
                                 <div className='card-body card h-100'>
-                                    <div className="d-flex justify-content-center mb-4">
-                                        {/* <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(22).webp"
-                                            className="rounded-circle shadow-1-strong" width="100" height="100" /> */}
+                                    <div className="d-flex justify-content-center mb-0">
+                                      
                                         <Avatar name="Rajesh" />
                                     </div>
                                     <p className="lead text-truncate-box my-3 text-white">
@@ -99,9 +98,8 @@ const Testimonial = () => {
                             </div>
                             <div className="col-md-12 mb-0 h-100">
                                 <div className='card card-body h-100'>
-                                    <div className="d-flex justify-content-center mb-4">
-                                        {/* <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(19).webp"
-                                            className="rounded-circle shadow-1-strong" width="100" height="100" /> */}
+                                    <div className="d-flex justify-content-center mb-0">
+                                       
                                         <Avatar name="Ravi" />
                                     </div>
                                     <p className="lead text-truncate-box my-3 text-white">
@@ -112,9 +110,8 @@ const Testimonial = () => {
                             </div>
                             <div className='col-md-12 mb-4 h-100'>
                                 <div className='card-body card h-100'>
-                                    <div className="d-flex justify-content-center mb-4">
-                                        {/* <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(22).webp"
-                                            className="rounded-circle shadow-1-strong" width="100" height="100" /> */}
+                                    <div className="d-flex justify-content-center mb-0">
+                                       
                                         <Avatar name="Sameer" />
                                     </div>
                                     <p className="lead text-truncate-box my-3 text-white">
@@ -125,9 +122,8 @@ const Testimonial = () => {
                             </div>
                             <div className="col-md-12 mb-0 h-100">
                                 <div className='card card-body h-100'>
-                                    <div className="d-flex justify-content-center mb-4">
-                                        {/* <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(19).webp"
-                                            className="rounded-circle shadow-1-strong" width="100" height="100" /> */}
+                                    <div className="d-flex justify-content-center mb-0">
+                                     
                                         <Avatar name="Vijay" />
                                     </div>
                                     <p className="lead text-truncate-box my-3 text-white">

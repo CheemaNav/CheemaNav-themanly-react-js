@@ -12,11 +12,11 @@ const Home = () => {
         <section className="banner bg-dark d-flex align-items-center" id='form'>
             <div className="container">
                 <div className="">
-                    <div className="row justify-content-between align-items-center mt-5">
+                    <div className="row justify-content-between align-items-center">
                         <div className="col-12 col-md-6">
-                            <h1 className="text-white">
-                            Dear Men,<br/>
-                            Welcome to themanly.in  
+                            <h1 className="text-white h3">
+                           <strong className="d-block mb-3 h1"> Dear Men,</strong>
+                            Welcome to the holistic wellness programme designed just for YOU !!
                             </h1>
                            
                         </div>
@@ -33,42 +33,12 @@ const Home = () => {
                 <div className="treat_inner">
                     <h2 className='text-center pb-2'>What we treat?</h2>
                     <div className="row mt-4">
-                        <div className="col-12 col-md-4 mb-4">
-                            <div className="card">
-                                <img className="card-img-top" src="./images/ED.jpeg" alt="Card image cap"/>
-                                <div className="card-body">
-                                  <h5 className="card-title">Sexual Wellness</h5>
-                                  <p className="card-text">At TheManly, we specialize in natural solutions for sexual wellness, focusing on premature ejaculation and erectile dysfunction issues.</p>
-                                  
-                                </div>
-                              </div>
-                        </div>
-                        <div className="col-12 col-md-4 mb-4">
+                    <div className="col-12 col-md-4 mb-4">
                             <div className="card">
                                 <img className="card-img-top" src="./images/liver.jpeg" alt="Card image cap"/>
                                 <div className="card-body">
                                   <h5 className="card-title">Liver Health</h5>
-                                  <p className="card-text">TheManly, targets male reproductive health with our 100% pure Ayurvedic treatments designed to optimize sperm health. Our natural formulations focus on improvingsperm count & motility through carefully selection of herbs.</p>
-                                 
-                                </div>
-                              </div>
-                        </div>
-                        <div className="col-12 col-md-4 mb-4">
-                            <div className="card">
-                                <img className="card-img-top" src="./images/diabetes.jpeg" alt="Card image cap"/>
-                                <div className="card-body">
-                                  <h5 className="card-title">Diabetes</h5>
-                                  <p className="card-text">At TheManly, we provide comprehensive Ayurvedic treatments for managing diabetes naturally. Our formulations are tailored to balance blood sugar levels, promote insulin sensitivity, and support overall health through potent herbal solutions.</p>
-                                  
-                                </div>
-                              </div>
-                        </div>
-                        <div className="col-12 col-md-4 mb-4">
-                            <div className="card">
-                                <img className="card-img-top" src="./images/hair.jpeg" alt="Card image cap"/>
-                                <div className="card-body">
-                                  <h5 className="card-title">Hair Loss</h5>
-                                  <p className="card-text">Our Experts specialize in natural treatments for hair loss, targeting root causes with adeptAyurvedic& 100% natural solutions.</p>
+                                  <p className="card-text">Detoxify and rejuvenate your liver with our specially formulated herbal remedies.</p>
                                  
                                 </div>
                               </div>
@@ -77,8 +47,38 @@ const Home = () => {
                             <div className="card">
                                 <img className="card-img-top" src="./images/gut.jpeg" alt="Card image cap"/>
                                 <div className="card-body">
-                                  <h5 className="card-title">Gut Health</h5>
-                                  <p className="card-text">At TheManly, we offer holistic treatments to support liver health, usingAyurvedic principles for detoxification and rejuvenation. Our 100% natural remedies aim to cleanse and strengthen the liver, promoting overall wellness and vitality.</p>
+                                  <h5 className="card-title">Gut Issues</h5>
+                                  <p className="card-text">Enhance your digestive health and balance your Agni (digestive fire) with our tailored treatments.</p>
+                                 
+                                </div>
+                              </div>
+                        </div>
+                        <div className="col-12 col-md-4 mb-4">
+                            <div className="card">
+                                <img className="card-img-top" src="./images/diabetes.jpeg" alt="Card image cap"/>
+                                <div className="card-body">
+                                  <h5 className="card-title">Diabetes Management</h5>
+                                  <p className="card-text">Manage your blood sugar levels naturally with our comprehensive Ayurvedic approach.</p>
+                                  
+                                </div>
+                              </div>
+                        </div>
+                        <div className="col-12 col-md-4 mb-4">
+                            <div className="card">
+                                <img className="card-img-top" src="./images/ED.jpeg" alt="Card image cap"/>
+                                <div className="card-body">
+                                  <h5 className="card-title">Energy, Stamina & Immunity Booster</h5>
+                                  <p className="card-text">Revitalize your energy levels and enhance stamina naturally.</p>
+                                 
+                                </div>
+                              </div>
+                        </div>
+                        <div className="col-12 col-md-4 mb-4">
+                            <div className="card">
+                                <img className="card-img-top" src="./images/hair.jpeg" alt="Card image cap"/>
+                                <div className="card-body">
+                                  <h5 className="card-title">Hair Care</h5>
+                                  <p className="card-text">Promote healthy hair growth and combat hair loss with our nourishing herbal solutions.</p>
                                  
                                 </div>
                               </div>
@@ -87,15 +87,20 @@ const Home = () => {
                             <div className="card">
                                 <img className="card-img-top" src="./images/ED.jpeg" alt="Card image cap"/>
                                 <div className="card-body">
-                                  <h5 className="card-title">Stamina Building</h5>
-                                  <p className="card-text">TheManly, empower men to build stamina naturally with time tested ayurvedic herbs & solutions. Our comprehensive approach mixesAyurvedic principles & modern science to increase endurance, strength</p>
-                                 
+                                  <h5 className="card-title">Sexual Wellness</h5>
+                                  <p className="card-text">Address men’s health issues such as Erectile Dysfunction (ED) and Premature Ejaculation (PME), Sperm Mortality, Loss of Libido and others with our targeted therapies.</p>
+                                  
                                 </div>
                               </div>
                         </div>
+                       
+                       
+                     
+                       
+                      
                     </div>
                   <div className='text-center mt-3'>
-                  <a href="#form" className="btn btn-primary mx-auto">Book a Appointment</a>
+                  <a href="#form" className="btn btn-primary mx-auto">Book an Appointment</a>
                   </div>
                 </div>
             </div>
@@ -154,21 +159,21 @@ const Home = () => {
             </div>
         </section>
 
-        <section className='mt-5'>
+        {/* <section className='mt-5'>
             <div className='container'>
-                <div className='row privacy_sec py-4 position-relative bg-primary align-items-center'>
+                <div className='row py-4 position-relative align-items-center'>
                     <div className='col-12 col-md-4'>
                         <div className='card'>
-                              <div className=''>
+                              <div className='card-body'>
 
                               </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </section> */}
 
-        <section className='mt-5'>
+        <section className='mt-5 mb-5'>
             <div className='container'>
                 <div className='row privacy_sec py-4 position-relative bg-primary align-items-center'>
                     <div className='col-12 col-md-4 d-flex align-items-center justify-content-center'>
@@ -182,7 +187,11 @@ const Home = () => {
             </div>
         </section>
         
-        <section className='faq_sec space_60'>
+      
+
+        <Testimonial />
+        
+        <section className='faq_sec space_60 '>
             <div className='container'>
                 <div className="treat_inner">
                     <h2 className='text-center pb-2'>Frequently Asked Questions</h2>
@@ -257,10 +266,6 @@ const Home = () => {
                 </div>
             </div>
         </section>
-
-        <Testimonial />
-        
-
 
        
 <section className="space_60 blog_sec">

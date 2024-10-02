@@ -10,7 +10,7 @@ const SelectField = ({ label, name, formik, options }) => (
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
         >
-            <option value="" label={`Select a ${label?.toLowerCase()}`} />
+            <option value="" label={`Select issue`} />
             {options?.map((option, index) => (
                 <option key={index} value={option}>{option}</option>
             ))}

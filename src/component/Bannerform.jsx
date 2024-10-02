@@ -6,6 +6,7 @@ import InputField from './common/InputFIeld';
 import SwalAlert from './common/SwalAlert';
 import SelectField from './common/SelectField';
 import TextArea from './common/TextArea';
+import Swal from 'sweetalert2';
 
 const problemOptions = [
   "Erectile Dysfunction",
@@ -37,7 +38,7 @@ const Bannerform = () => {
       problem: '',
       problem_other: '',
       userMessage: '',
-      provider: 'local', // Static field
+      provider: 'mobile', // Static field
       userRole: 'ROLE_USER' // Static field
     },
     validationSchema: bookAppointmentSchema,
@@ -50,11 +51,11 @@ const Bannerform = () => {
   // Handle form submission
   const handleSubmit = async (values) => {
     try {
-
       const submissionData = {
         ...values,
         problemCategory: values.problem
       };
+
       // Submit the form data to the signup API
       const response = await axios.post('/auth/signup', submissionData, {
         headers: {
@@ -63,15 +64,16 @@ const Bannerform = () => {
         }
       });
 
-      if (response.status === 200) {
-
+      if (response.status >= 200 && response.status < 300) {
         SwalAlert({
           title: 'Success!',
           message: 'Your form was successfully submitted.',
           type: 'success',
         });
+        
         // On success, send OTP to the phone number
         setIsOtpSent(true);
+        showOtpPopup();
       }
     } catch (error) {
       console.error('Error submitting form:', error);
@@ -81,25 +83,84 @@ const Bannerform = () => {
         type: 'error',
       });
     } finally {
-      formik.setSubmitting(false)
+      formik.setSubmitting(false);
     }
   };
 
+  // Show OTP popup with Swal
+  const showOtpPopup = () => {
+    Swal.fire({
+      title: 'Enter OTP sent to your phone',
+      html: `
+        <label>Enter OTP sent to your phone</label>
+        <input type="text" id="otp-input" class="swal2-input" placeholder="Enter OTP">
+      `,
+      confirmButtonText: 'Verify OTP',
+      showCancelButton: true,
+      preConfirm: async () => {
+        const otpValue = Swal.getPopup().querySelector('#otp-input').value;
+        if (!otpValue) {
+          Swal.showValidationMessage('Please enter the OTP');
+          return false; // Stop further execution if OTP is not entered
+        }
+  
+        try {
+          // Call OTP verification API
+          const response = await axios.get(`/auth/verifyOtp`, {
+            params: {
+              channel: 'mobile',
+              otp: otpValue,
+              userId: 17
+            },
+            headers: {
+              accept: 'application/json',
+              Authorization: '-'
+            }
+          });
+  
+          if (response.status >= 200 && response.status < 300) {
+            // OTP verified successfully
+            setOtp(otpValue);
+            setIsOtpVerified(true);
+            Swal.fire({
+              title: 'Success!',
+              text: 'OTP verified successfully!',
+              icon: 'success',
+            });
+          } else {
+            // Invalid OTP response
+            Swal.showValidationMessage('Invalid OTP. Please try again.');
+          }
+        } catch (error) {
+          // Handle error during OTP verification
+          Swal.showValidationMessage('Invalid OTP. Please try again.');
+        }
+        return false; // Keep the popup open
+      }
+    });
+  };
+  
+
   // Handle OTP verification
-  const handleOtpVerification = async () => {
+  const handleOtpVerification = async (otpValue) => {
     try {
-      // Verify the OTP using the verifyOtp API
-      const response = await axios.post(`/auth/verifyOtp?channel=`, {
-        otp,
-        mobile: formik.values.mobile
+      const response = await axios.get(`/auth/verifyOtp`, {
+        params: {
+          channel: 'mobile',
+          otp: otpValue,
+          userId: 17
+        },
+        headers: {
+          accept: 'application/json',
+          Authorization: '-'
+        }
       });
 
-      if (response.status === 200) {
-        // On successful OTP verification
+      if (response.status >= 200 && response.status < 300) {
         setIsOtpVerified(true);
         SwalAlert({
           title: 'Success!',
-          message: 'Form submitted successfully!',
+          message: 'OTP verified successfully!',
           type: 'success',
         });
       }
@@ -116,32 +177,36 @@ const Bannerform = () => {
   return (
     <>
       <form className="row g-3 p-4 rounded border" onSubmit={formik.handleSubmit}>
-        <p className="fw-bold text-white text-center h6">Book your appointment @ just ₹ 499/-</p>
+        <p className="fw-bold text-white text-center h5 mb-0">Reboot yourself with us, <span className='d-block'>start your wellness journey today</span></p>
+        <small className='text-center text-white mt-2'>
+        Please share this short information about yourself and our experts will reach out to you very soon.
+        </small>
 
         <InputField
-          label="Name"
+          label="Your Name*"
           name="fullName"
           type="text"
           formik={formik}
         />
-        <InputField
-          label="Email"
-          name="email"
+          <InputField
+          label="Your Age*"
+          name="age"
           type="text"
           formik={formik}
         />
-        <InputField
-          label="Phone Number"
+         <InputField
+          label="Your Phone Number*"
           name="mobile"
           type="text"
           formik={formik}
         />
         <InputField
-          label="Age"
-          name="age"
+          label="Your Email Address"
+          name="email"
           type="text"
           formik={formik}
         />
+       
         <InputField
           label="City"
           name="city"
@@ -150,7 +215,7 @@ const Bannerform = () => {
         />
 
         <SelectField
-          label="Problem"
+          label="Issue you are facing"
           name="problem"
           formik={formik}
           options={problemOptions}
@@ -175,31 +240,15 @@ const Bannerform = () => {
 
         <div className="col-12">
           <button className="btn btn-primary w-100 py-2" type="submit" disabled={formik.isSubmitting || !formik.isValid}>
-            {formik.isSubmitting ? 'Submitting...' : 'Submit'}
+            {formik.isSubmitting ? 'Proceed' : 'Next'}
           </button>
         </div>
       </form>
 
-      {/* OTP Input Section */}
-      {isOtpSent && !isOtpVerified && (
-        <div className="mt-3">
-          <label>Enter OTP sent to your phone</label>
-          <input
-            type="text"
-            className="form-control"
-            value={otp}
-            onChange={(e) => setOtp(e.target.value)}
-          />
-          <button type='button' className="btn btn-primary w-100 py-2 mt-2" onClick={handleOtpVerification}>
-            Verify OTP
-          </button>
-        </div>
-      )}
-
       {/* Success message */}
       {isOtpVerified && (
-        <div className="alert alert-success mt-3">
-          <p>Form submitted successfully!</p>
+        <div className="alert alert-success mt-3 text-center">
+          <p className='mb-0'>Form submitted successfully!</p>
         </div>
       )}
     </>
