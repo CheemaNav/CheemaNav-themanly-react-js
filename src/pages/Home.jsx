@@ -159,21 +159,57 @@ const Home = () => {
             </div>
         </section>
 
-        {/* <section className='mt-5'>
+        <section className='mt-5 whycho_Sec'>
             <div className='container'>
+            <h2 class="text-center pb-0 mb-0">Why Choose TheManly.in?</h2>
                 <div className='row py-4 position-relative align-items-center'>
-                    <div className='col-12 col-md-4'>
-                        <div className='card'>
-                              <div className='card-body'>
-
-                              </div>
-                        </div>
-                    </div>
-                </div>
+                  <div className="col-12 col-md-3 mb-4">
+                        <div className="card text-center">
+                        <div className='cardimg'><img className="card-img-top" src="./images/leader.png" alt="Card image cap"/> </div>
+                            <div className="card-body">
+                              <h5 className="card-title">Team of Expertise</h5>
+                              <p className="card-text">Our team consists of highly qualified Ayurvedic doctors with years of experience.</p>
+                              
+                            </div>
+                          </div>
+                  </div>
+                  <div className="col-12 col-md-3 mb-4">
+                        <div className="card text-center">
+                        <div className='cardimg'> <img className="card-img-top" src="./images/organic.png" alt="Card image cap"/></div>
+                            <div className="card-body">
+                              <h5 className="card-title">100% Natural Products</h5>
+                              <p className="card-text">We use only the finest natural ingredients, sourced sustainably.</p>
+                              
+                            </div>
+                          </div>
+                  </div>
+                  <div className="col-12 col-md-3 mb-4">
+                        <div className="card text-center">
+                        <div className='cardimg'> <img className="card-img-top" src="./images/bot.png" alt="Card image cap"/></div>
+                            <div className="card-body">
+                              <h5 className="card-title">Customised Treatment</h5>
+                              <p className="card-text">Our treatments are tailored to meet your unique health needs.</p>
+                              
+                            </div>
+                          </div>
+                  </div>
+                  <div className="col-12 col-md-3 mb-4">
+                        <div className="card text-center">
+                           <div className='cardimg'>
+                             <img className="card-img-top" src="./images/check.png" alt="Card image cap"/>
+                           </div>
+                            <div className="card-body">
+                              <h5 className="card-title">100% Privacy</h5>
+                              <p className="card-text">We assure our patients to maintain 100% privacy of their treatment.</p>
+                              
+                            </div>
+                          </div>
+                  </div>
+          </div>
             </div>
-        </section> */}
+        </section>
 
-        <section className='mt-5 mb-5'>
+        {/* <section className='mt-5 mb-5'>
             <div className='container'>
                 <div className='row privacy_sec py-4 position-relative bg-primary align-items-center'>
                     <div className='col-12 col-md-4 d-flex align-items-center justify-content-center'>
@@ -185,7 +221,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </section> */}
         
       
 
