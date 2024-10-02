@@ -194,12 +194,18 @@ table th, table td{border: 1px solid #ddd;}
     .slick-next{right: 10px; z-index: 9;}
     .slick-prev { left: 10px;z-index: 9;}  
     .banner h1 strong {font-size: 36px;}
-    .banner form{margin-top: 30px;}
+    .banner form{margin-top: 10px;}
     .banner img.Guaranteed{margin-top: 0;}
     .expert_sec .col { flex: 100% !important; }
     .expert_sec img.Guaranteed { margin-bottom: 40px; margin-top: 20px; position: unset; }
     footer.bg-dark .bottom_footer .container.d-flex { flex-direction: column; gap: 10px; }
-
+    .banner{    padding-block: 30px;}
+    .banner small br{display: none;}
+    .expert_sec .col-12.col-md-4 {padding-inline: 30px;}
+    .expert_sec .card img {
+        height: 220px;}
+    
+    
 }
 
 

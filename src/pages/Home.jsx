@@ -13,7 +13,7 @@ const Home = () => {
         <div className="container">
           <div className="">
             <div className="row justify-content-between align-items-center">
-              <div className="col-12 col-md-6 mt-5 pt-5">
+              <div className="col-12 col-md-6 mt-md-5 pt-md-5">
                 <h1 className="text-white h5">
                   <strong className="d-block mb-0 h1"> Reboot</strong><strong className="d-block mb-2 h1"> yourself </strong>The holistic wellness programme designed for Men!!</h1>
                   <img className="Guaranteed" src="./images/guaranteed.png" alt="Guaranteed" />
