@@ -58,7 +58,7 @@ const Bannerform = () => {
       // Submit the form data to the signup API
       const response = await axios.post('/auth/signup', submissionData, {
         headers: {
-          Authorization: " 1",
+          Authorization: " ",
           'DEVICE-TYPE': 'Web'
         }
       });

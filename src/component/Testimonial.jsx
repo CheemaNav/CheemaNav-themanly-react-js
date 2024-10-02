@@ -84,7 +84,7 @@ const Testimonial = () => {
 
                     <div className="row text-center mt-0">
                         <Slider {...settings}>
-                            <div className='col-md-12 mb-4 mb-md-0'>
+                            <div className='col-md-12 mb-4 h-100'>
                                 <div className='card-body card h-100'>
                                     <div className="d-flex justify-content-center mb-4">
                                         {/* <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(22).webp"
@@ -94,10 +94,10 @@ const Testimonial = () => {
                                     <p className="lead text-truncate-box my-3 text-white">
                                         “I’ve been using Diaease for the past six months, and the results have been remarkable. My blood sugar levels are more stable, and I feel more energetic throughout the day. This Ayurvedic solution has truly transformed my diabetes management. Highly recommended!”
                                     </p>
-                                    <p className="font-italic font-weight-normal mb-0 text-white">- Rajesh - 54 Yrs</p>
+                                    <p className="font-italic font-weight-normal mb-0 text-white">Rajesh - 54 Yrs</p>
                                 </div>
                             </div>
-                            <div className="col-md-12 mb-0">
+                            <div className="col-md-12 mb-0 h-100">
                                 <div className='card card-body h-100'>
                                     <div className="d-flex justify-content-center mb-4">
                                         {/* <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(19).webp"
@@ -107,10 +107,10 @@ const Testimonial = () => {
                                     <p className="lead text-truncate-box my-3 text-white">
                                         “Since I started using ROVER, my energy and endurance have improved significantly. I can now get through my day without feeling exhausted. Highly recommended!”
                                     </p>
-                                    <p className="font-italic font-weight-normal mb-0 text-white">- Ravi - 47 Yrs</p>
+                                    <p className="font-italic font-weight-normal mb-0 text-white">Ravi - 47 Yrs</p>
                                 </div>
                             </div>
-                            <div className='col-md-12 mb-4 mb-md-0'>
+                            <div className='col-md-12 mb-4 h-100'>
                                 <div className='card-body card h-100'>
                                     <div className="d-flex justify-content-center mb-4">
                                         {/* <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(22).webp"
@@ -120,10 +120,10 @@ const Testimonial = () => {
                                     <p className="lead text-truncate-box my-3 text-white">
                                         “I found the TheManly.In experts as the best. I got relief from ED problem within month. TheManly.in & its experts are highly recommended”
                                     </p>
-                                    <p className="font-italic font-weight-normal mb-0 text-white">- Sameer - 38 Yrs</p>
+                                    <p className="font-italic font-weight-normal mb-0 text-white">Sameer - 38 Yrs</p>
                                 </div>
                             </div>
-                            <div className="col-md-12 mb-0">
+                            <div className="col-md-12 mb-0 h-100">
                                 <div className='card card-body h-100'>
                                     <div className="d-flex justify-content-center mb-4">
                                         {/* <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(19).webp"
@@ -133,7 +133,7 @@ const Testimonial = () => {
                                     <p className="lead text-truncate-box my-3 text-white">
                                         “Using Diaease has been a turning point in my diabetes journey. My overall health has improved, and I feel more in control of my condition. This Ayurvedic medicine is truly effective and reliable.”
                                     </p>
-                                    <p className="font-italic font-weight-normal mb-0 text-white">- Vijay Yadav - 52 Yrs</p>
+                                    <p className="font-italic font-weight-normal mb-0 text-white">Vijay Yadav - 52 Yrs</p>
                                 </div>
                             </div>
                         </Slider>
