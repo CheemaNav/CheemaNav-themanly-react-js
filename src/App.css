@@ -119,7 +119,7 @@ h1, h2, h3, h4, h5, h6, strong{font-family: 'rocaone-blitregular';}
 .btn-primary:hover{background-color: #02263b !important; border-color:#02263b !important;}
 .text-primary{color: #084060 !important;}
 header img.logo { width: 140px;}
-
+header ul.navbar-nav svg { margin-right: 5px; position: relative; top: -1px; }
 
 .banner form .invalid-feedback { display: none; }
 .banner{background: url(../public/banner.jpg) no-repeat center / cover;  background-position: top right; position: relative;padding-block: 60px;min-height: 90vh; padding-top: 80px;}
