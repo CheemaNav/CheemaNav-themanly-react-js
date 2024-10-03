@@ -188,7 +188,7 @@ const Home = () => {
         <div className='flex-grow-1 d-flex flex-column justify-content-start'>
           <p className='mb-0 p-3 px-1'>
             <strong className='d-block mb-1 h6'>Dr. Atul Bhargava</strong>
-            MS in Ayurveda
+            MS - Ayurveda
           </p>
         </div>
       </div>
