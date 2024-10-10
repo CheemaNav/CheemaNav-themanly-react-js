@@ -35,27 +35,30 @@ const Bannerform = () => {
       mobile: '',
       age: '',
       city: '',
-      problem: '',
+      problem: [],  // Array to hold multiple selections
       problem_other: '',
       userMessage: '',
-      provider: 'mobile', // Static field
-      userRole: 'ROLE_USER' // Static field
+      provider: 'mobile', 
+      userRole: 'ROLE_USER' 
     },
     validationSchema: bookAppointmentSchema,
     enableReinitialize: true,
     onSubmit: values => {
-      handleSubmit(values)
+      handleSubmit(values);
     }
-  })
+  });
+  
+  
 
   // Handle form submission
   const handleSubmit = async (values) => {
     try {
       const submissionData = {
         ...values,
-        problemCategory: values.problem
+        problem: values.problem.join(', '), // Convert array to comma-separated string
+        problemCategory: values.problem.join(', '), 
       };
-
+  
       // Submit the form data to the signup API
       const response = await axios.post('/auth/signup', submissionData, {
         headers: {
@@ -63,17 +66,28 @@ const Bannerform = () => {
           'DEVICE-TYPE': 'Web'
         }
       });
-
-      if (response.status >= 200 && response.status < 300) {
+  
+      // Check if the response is a success (2xx status)
+      if (response.status >= 200 && response.status < 300 && response.data?.responseStatus) {
+        const userId = response.data?.responseObject?.id; // Get userId from response
+  
+        if (userId) {
+          // Store userId in localStorage
+          localStorage.setItem('userId', userId);
+        }
+  
         SwalAlert({
           title: 'Success!',
-          message: 'Your form was successfully submitted.',
+          message: 'Your form was successfully submitted. Please verify the OTP.',
           type: 'success',
         });
         
         // On success, send OTP to the phone number
         setIsOtpSent(true);
         showOtpPopup();
+      } else {
+        // If response doesn't indicate success
+        throw new Error("Unexpected API response.");
       }
     } catch (error) {
       console.error('Error submitting form:', error);
@@ -86,7 +100,9 @@ const Bannerform = () => {
       formik.setSubmitting(false);
     }
   };
+  
 
+  // Show OTP popup with Swal
   // Show OTP popup with Swal
   const showOtpPopup = () => {
     Swal.fire({
@@ -105,12 +121,15 @@ const Bannerform = () => {
         }
   
         try {
+          // Get userId from localStorage
+          const userId = localStorage.getItem('userId');
+  
           // Call OTP verification API
           const response = await axios.get(`/auth/verifyOtp`, {
             params: {
               channel: 'mobile',
               otp: otpValue,
-              userId: 17
+              userId: userId // Use the dynamic userId stored in localStorage
             },
             headers: {
               accept: 'application/json',
@@ -122,12 +141,21 @@ const Bannerform = () => {
             // OTP verified successfully
             setOtp(otpValue);
             setIsOtpVerified(true);
+            
             Swal.fire({
               title: 'Success!',
               text: 'OTP verified successfully!',
               icon: 'success',
+              timer: 1400, // Optional: Set 2-second timer for the Swal alert
+              willClose: () => {
+                // After the Swal closes, redirect the user
+                setTimeout(() => {
+                  window.location.href = 'https://razorpay.me/@themanlyin?amount=n%2FUUsdogj%2F7sarE2WD13qg%3D%3D';
+                }, 1400); // 2-second delay before redirecting
+              }
             });
-          } else {
+          }
+           else {
             // Invalid OTP response
             Swal.showValidationMessage('Invalid OTP. Please try again.');
           }
@@ -141,6 +169,8 @@ const Bannerform = () => {
   };
   
 
+  
+
   // Handle OTP verification
   const handleOtpVerification = async (otpValue) => {
     try {
@@ -148,7 +178,7 @@ const Bannerform = () => {
         params: {
           channel: 'mobile',
           otp: otpValue,
-          userId: 17
+          userId: 99
         },
         headers: {
           accept: 'application/json',
