@@ -139,7 +139,7 @@ header li.nav-item a.nav-link { color: #111; }
 .banner form .col-12 { margin-top: 8px; }
 .banner form button.btn { margin-top: 10px;line-height: 1; padding-top: 12px !important;}
 .banner form input, .banner form select, .banner form textarea{font-size: 14px;    appearance: auto;}
-
+.banner form input, .banner form select{height: 36px;}
 /* treat_sec */
 section.treat_sec .card { height: 100%;border-radius: 20px !important; overflow: hidden;}
 section.treat_sec .card-title { font-weight: 700; }
@@ -189,7 +189,7 @@ table{border: 1px solid #ddd;}
 table thead th{font-weight: 600; background: #eee !important;}
 table th, table td{border: 1px solid #ddd; padding: 6px;}
 footer .social_icon svg { width: 17px; height: 17px; }
-.form-control { min-height: 36px; }
+.form-control { min-height: 36px !important; }
 
 @media only screen and (max-width: 767px) {
     .slick-next{right: 10px; z-index: 9;}
