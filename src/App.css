@@ -204,6 +204,9 @@ footer .social_icon svg { width: 17px; height: 17px; }
 }
 .banner form .dropdown label input { height: auto; margin-right: 8px; }
 .banner form .dropdown button:after { border-right: 2px solid; border-bottom: 2px solid; border-left: 0; border-top: 0; display: inline-block; width: 8px; height: 8px; transform: rotate(45deg); position: absolute; right: 15px; }
+.payment_btn { text-align: center; background: #00000033; border-color: #72767a !important; border-radius: 20px !important; padding: 15px 15px 20px !important; }
+.payment_btn span { font-size: 30px; color: #fff; display: block; margin-bottom: 20px; }
+.payment_btn button {padding-top: 12px !important;}
 
 
 
