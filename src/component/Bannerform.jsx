@@ -12,14 +12,18 @@ import PaymentComponent from './common/PaymentComponent'; // Import the PaymentC
 const problemOptions = [
   "Erectile Dysfunction",
   "⁠Early Ejaculation",
+  "⁠Low Sperm Count",
+  "⁠Low Testosterone",
+  "⁠Loss of Libido",
+  "Gut Issues",
   "Liver Health",
   "⁠Diabetes",
-  "⁠Hair Fall",
-  "⁠Obesity",
-  "⁠Loss of Libido",
-  "⁠Low Sperm Count",
-  "⁠Stamina & Strength",
-  "⁠Low Testosterone",
+  // "⁠Hair Fall",
+  // "⁠Obesity",
+ 
+ 
+  // "⁠Stamina & Strength",
+
   "Other"
 ];
 
