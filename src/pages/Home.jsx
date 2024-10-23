@@ -45,6 +45,16 @@ const Home = () => {
             <div className="row mt-4">
             <div className="col-12 col-md-4 mb-4">
                 <div className="card">
+                  <img className="card-img-top" src="./images/Sperm.jpeg" alt="Card image cap" />
+                  <div className="card-body">
+                    <h5 className="card-title">Low Sperm Count</h5>
+                    <p className="card-text">We offer targeted treatments and lifestyle adjustments to help improve sperm production and fertility outcomes.</p>
+
+                  </div>
+                </div>
+              </div>
+            <div className="col-12 col-md-4 mb-4">
+                <div className="card">
                   <img className="card-img-top" src="./images/ED.jpeg" alt="Card image cap" />
                   <div className="card-body">
                     <h5 className="card-title">Sexual Wellness</h5>
@@ -55,10 +65,43 @@ const Home = () => {
               </div>
               <div className="col-12 col-md-4 mb-4">
                 <div className="card">
+                  <img className="card-img-top" src="./images/Testosterone.jpeg" alt="Card image cap" />
+                  <div className="card-body">
+                    <h5 className="card-title">Low Testosterone</h5>
+                    <p className="card-text">Our therapies focus on restoring hormonal balance to enhance energy, strength, and overall well-being.</p>
+
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-12 col-md-4 mb-4">
+                <div className="card">
                   <img className="card-img-top" src="./images/liver.jpeg" alt="Card image cap" />
                   <div className="card-body">
                     <h5 className="card-title">Liver Health</h5>
                     <p className="card-text">Detoxify and rejuvenate your liver with our specially formulated herbal remedies.</p>
+
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 col-md-4 mb-4">
+                <div className="card">
+                  <img className="card-img-top" src="./images/Libido.jpeg" alt="Card image cap" />
+                  <div className="card-body">
+                    <h5 className="card-title">Loss of Libido</h5>
+                    <p className="card-text">We provide personalized care to address hormonal or psychological factors, helping to boost sexual desire and performance.</p>
+
+                  </div>
+                </div>
+              </div>
+
+             
+              <div className="col-12 col-md-4 mb-4">
+                <div className="card">
+                  <img className="card-img-top" src="./images/diabetes.jpeg" alt="Card image cap" />
+                  <div className="card-body">
+                    <h5 className="card-title">Diabetes Management</h5>
+                    <p className="card-text">Manage your blood sugar levels naturally with our comprehensive Ayurvedic approach.</p>
 
                   </div>
                 </div>
@@ -75,16 +118,6 @@ const Home = () => {
               </div>
               <div className="col-12 col-md-4 mb-4">
                 <div className="card">
-                  <img className="card-img-top" src="./images/diabetes.jpeg" alt="Card image cap" />
-                  <div className="card-body">
-                    <h5 className="card-title">Diabetes Management</h5>
-                    <p className="card-text">Manage your blood sugar levels naturally with our comprehensive Ayurvedic approach.</p>
-
-                  </div>
-                </div>
-              </div>
-              <div className="col-12 col-md-4 mb-4">
-                <div className="card">
                   <img className="card-img-top" src="./images/Energy.jpeg" alt="Card image cap" />
                   <div className="card-body">
                     <h5 className="card-title">Boosting Stamina & Testosterone</h5>
@@ -93,16 +126,9 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-12 col-md-4 mb-4">
-                <div className="card">
-                  <img className="card-img-top" src="./images/hair.jpeg" alt="Card image cap" />
-                  <div className="card-body">
-                    <h5 className="card-title">Hair Care</h5>
-                    <p className="card-text">Promote healthy hair growth and combat hair loss with our nourishing herbal solutions.</p>
-
-                  </div>
-                </div>
-              </div>
+           
+             
+             
             
             </div>
             <div className='text-center mt-3'>
@@ -260,23 +286,6 @@ const Home = () => {
   </div>
 </section>
 
-
-      {/* <section className='mt-5 mb-5'>
-            <div className='container'>
-                <div className='row privacy_sec py-4 position-relative bg-primary align-items-center'>
-                    <div className='col-12 col-md-4 d-flex align-items-center justify-content-center'>
-                        <img className='w-75' src='https://qurex-s3.s3.ap-south-1.amazonaws.com/assets/wellness/check-shield.webp' />
-                    </div>
-                    <div className='col-12 col-md-8'>
-                       <h2 className='text-white'>At Manly, we take your privacy seriously. Always.</h2>
-                       <p className='fony-18 text-white mb-0'>Anonymity and data privacy are non-negotiable. Your confidentiality is our commitment, every step of the way.</p>
-                    </div>
-                </div>
-            </div>
-        </section> */}
-
-
-
       <Testimonial />
 
       <section className='faq_sec space_60' id='faq'>
@@ -287,205 +296,206 @@ const Home = () => {
               <div className="accordion-item">
                 <h2 className="accordion-header" id="panelsStayOpen-headingOne">
                   <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
-                    Is It Safe to Use?
+                  How can I start my treatment with themanly.in?
                   </button>
                 </h2>
                 <div id="panelsStayOpen-collapseOne" className="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
                   <div className="accordion-body">
-                    <p>Its 100% Safe.</p>
-                    <p>Our team consists of Naturopaths &Ayurveda experts having cumulative experience of more than 4 decades in men’s wellness, thoroughly evaluate your medical history & prescribe formulations which are safe, effective & absolutely for you.</p>
-                    <p>You can feel confident that you are in safe hands with our experts guiding you at every step.</p>
+                    <p>Visit our website www.themanly.in & fill up the Book Your Appointment form. Or you can call or whatsapp on the mobile no. mentioned on our website (<a href="tel:+91-9755717199">+91-9755717199</a>). Our patient care executive will call you & guide you through the process.</p>
+                    
                   </div>
                 </div>
               </div>
               <div className="accordion-item">
                 <h2 className="accordion-header" id="panelsStayOpen-headingTwo">
                   <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="flush-collapseOne">
-                    Is the medication cost included?
+                  What can I expect during my first consultation?
                   </button>
                 </h2>
                 <div id="panelsStayOpen-collapseTwo" className="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
                   <div className="accordion-body">
-                    <p>Yes, our treatment costs include medications if prescribed. Consultancy charges are separate as mentioned on website.</p>
+                    <p>The first consultation involves a detailed analysis of your health using detailed questionnaire. The doctor will discuss your lifestyle, diet, and current health concerns to develop a personalized treatment plan.</p>
                   </div>
                 </div>
               </div>
               <div className="accordion-item">
                 <h2 className="accordion-header" id="panelsStayOpen-headingThree">
                   <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="flush-collapseOne">
-                    How long does it take?
+                  Is it going to be customised for my problem?
                   </button>
                 </h2>
                 <div id="panelsStayOpen-collapseThree" className="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
                   <div className="accordion-body">
-                    <p>Every journey is personal, our program is designed to deliver rapid results while establishing healthy habits for long-term. </p>
-                    <p>It depends upon individual to individual & also severity of issue. Typically for moderate issues It takes 2-3 months’ time frame rest be assured that you are in right hands & our experts will guide you better in terms of time frame of treatment & medication.</p>
+                    <p>Its completely customised as every individual is unique & every individual has different issues. Hence, we take personalised care of each & everyone separately.</p>
                   </div>
                 </div>
               </div>
               <div className="accordion-item">
                 <h2 className="accordion-header" id="panelsStayOpen-headingThree">
                   <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefor" aria-expanded="false" aria-controls="flush-collapseOne">
-                    Is treatment holistic?
+                  Do I need to consult a doctor before starting treatment?
                   </button>
                 </h2>
                 <div id="panelsStayOpen-collapsefor" className="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
                   <div className="accordion-body">
-                    <p>We have many experts on our panel. Right from Naturopath, Ayurveda doctors to re-known Dietitian’s.</p>
-                    <p>Along with medication, if it’s required to alter your diet plan than our cross functional team kicks in & advices our patient accordingly to take a holistic approach.</p>
-                    <p>The whole idea is to imbibe healthy habits so that the solution is long term &permanent.</p>
+                    <p>Yes, an initial consultation is required to assess your health and prescribe the correct therapies or supplements, as not all treatments suit everyone.</p>
                   </div>
                 </div>
               </div>
               <div className="accordion-item">
                 <h2 className="accordion-header" id="panelsStayOpen-headingThree">
                   <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefive" aria-expanded="false" aria-controls="flush-collapseOne">
-                    How long will it take to deliver my order?
+                  How can I be sure about my privacy and confidentiality?
                   </button>
                 </h2>
                 <div id="panelsStayOpen-collapsefive" className="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
                   <div className="accordion-body">
-                    <p>Delivery times may vary depending on the delivery location as well as the type of product you order.</p>
+                    <p>Your personal data is stored behind secured networks and accessible only to authorized personnel. We guarantee to maintain strict confidentiality standards and do not disclose, sell, or transfer personal data unless required by law. Only individuals with specific access rights can view your data. We provide detailed privacy policies explaining how they collect, use, and protect your data, ensuring transparency and trust.</p>
 
                   </div>
                 </div>
               </div>
+              <div className="accordion-item">
+                <h2 className="accordion-header" id="panelsStayOpen-headingThree">
+                  <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefive" aria-expanded="false" aria-controls="flush-collapseOne">
+                  How do I know I have ED issue?
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapsefive" className="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                  <div className="accordion-body">
+                    <p>Difficulty getting an erection: Struggling to achieve an erection, even when sexually aroused, could be a sign of ED.</p>
+                    <p>Difficulty maintaining an erection: If you can get an erection but cannot sustain it long enough for sexual activity, this may indicate ED.</p>
+                    <p>Reduced sexual desire: A low libido or reduced interest in sexual activity may be related to ED or other underlying issues.</p>
+                    <p>Intermittent issues: Having occasional difficulty with erections is common, but if the issue persists, it’s advisable to see a doctor for further evaluation.</p>
+
+                  </div>
+                </div>
+              </div>
+
+             
+              <div className="accordion-item">
+  <h2 className="accordion-header" id="panelsStayOpen-headingOne">
+    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+      Is the medication cost included?
+    </button>
+  </h2>
+  <div id="panelsStayOpen-collapseOne" className="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+    <div className="accordion-body">
+      <p>Yes, our treatment costs include medications if prescribed. Consultancy charges are separate as mentioned on our website.</p>
+    </div>
+  </div>
+</div>
+
+<div className="accordion-item">
+  <h2 className="accordion-header" id="panelsStayOpen-headingTwo">
+    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+      What is PME and how can I know if I have PME issue?
+    </button>
+  </h2>
+  <div id="panelsStayOpen-collapseTwo" className="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+    <div className="accordion-body">
+      <p>Premature ejaculation occurs in men when semen leaves the body sooner than wanted during sex. Premature ejaculation is a common sexual complaint...</p>
+    </div>
+  </div>
+</div>
+
+<div className="accordion-item">
+  <h2 className="accordion-header" id="panelsStayOpen-headingThree">
+    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+      Is premature ejaculation treatable through Ayurveda?
+    </button>
+  </h2>
+  <div id="panelsStayOpen-collapseThree" className="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+    <div className="accordion-body">
+      <p>Ayurveda can effectively treat premature ejaculation by using herbal therapies that enhance stamina...</p>
+    </div>
+  </div>
+</div>
+
+<div className="accordion-item">
+  <h2 className="accordion-header" id="panelsStayOpen-headingFour">
+    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+      Can Ayurveda treat erectile dysfunction (ED)?
+    </button>
+  </h2>
+  <div id="panelsStayOpen-collapseFour" className="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+    <div className="accordion-body">
+      <p>Yes, Ayurveda addresses ED by identifying the root cause, which may be linked to stress, lifestyle, or dosha imbalances...</p>
+    </div>
+  </div>
+</div>
+
+<div className="accordion-item">
+  <h2 className="accordion-header" id="panelsStayOpen-headingFive">
+    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+      How long does it take?
+    </button>
+  </h2>
+  <div id="panelsStayOpen-collapseFive" className="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+    <div className="accordion-body">
+      <p>Every journey is personal, and our program is designed to deliver rapid results while establishing healthy habits...</p>
+    </div>
+  </div>
+</div>
+
+<div className="accordion-item">
+  <h2 className="accordion-header" id="panelsStayOpen-headingSix">
+    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+      Are there any side effects of Ayurvedic treatments?
+    </button>
+  </h2>
+  <div id="panelsStayOpen-collapseSix" className="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
+    <div className="accordion-body">
+      <p>Ayurvedic treatments are natural and safe when prescribed by a qualified practitioner...</p>
+    </div>
+  </div>
+</div>
+
+<div className="accordion-item">
+  <h2 className="accordion-header" id="panelsStayOpen-headingSeven">
+    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven">
+      Is treatment holistic?
+    </button>
+  </h2>
+  <div id="panelsStayOpen-collapseSeven" className="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSeven">
+    <div className="accordion-body">
+      <p>We have many experts on our panel, including Naturopaths, Ayurveda doctors, and Dietitians...</p>
+    </div>
+  </div>
+</div>
+
+<div className="accordion-item">
+  <h2 className="accordion-header" id="panelsStayOpen-headingEight">
+    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false" aria-controls="panelsStayOpen-collapseEight">
+      How long will it take to deliver my order?
+    </button>
+  </h2>
+  <div id="panelsStayOpen-collapseEight" className="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingEight">
+    <div className="accordion-body">
+      <p>Delivery times may vary depending on the delivery location and the type of product ordered...</p>
+    </div>
+  </div>
+</div>
+
+<div className="accordion-item">
+  <h2 className="accordion-header" id="panelsStayOpen-headingNine">
+    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false" aria-controls="panelsStayOpen-collapseNine">
+      Can I continue my regular medication alongside Ayurvedic treatment?
+    </button>
+  </h2>
+  <div id="panelsStayOpen-collapseNine" className="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingNine">
+    <div className="accordion-body">
+      <p>Yes, in many cases, Ayurvedic treatments can be used alongside conventional medicines...</p>
+    </div>
+  </div>
+</div>
+
+          
+
             </div>
           </div>
         </div>
       </section>
-
-
-      {/* <section className="space_60 blog_sec">
-        <h2 className='text-center pb-2'>Blogs</h2>
-        <div className="container overflow-hidden">
-          <div className="row gy-4 gy-md-5 gx-xl-6 gy-xl-6 gx-xxl-9 gy-xxl-9">
-            <div className="col-12 col-lg-4">
-              <article>
-                <div className="card border-0 bg-transparent">
-                  <figure className="card-img-top mb-4 overflow-hidden bsb-overlay-hover">
-                    <a href="#!">
-                      <img className="img-fluid" loading="lazy" src="./images/liver.jpeg" alt="Living" />
-                    </a>
-
-                  </figure>
-                  <div className="card-body m-0 p-0">
-                    <div className="entry-header mb-2">
-                      <ul className="entry-meta list-unstyled d-flex mb-3">
-                        <li>
-                          <a className="d-inline-flex px-2 py-1 link-primary text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-2 text-decoration-none fs-7" href="#!">Liver Health</a>
-                        </li>
-                      </ul>
-                      <h2 className="card-title entry-title h4 m-0">
-                        <a className="link-dark text-decoration-none" href="#!">TheManly, targets male reproductive</a>
-                      </h2>
-                    </div>
-                  </div>
-                  <div className="card-footer border-0 bg-transparent p-0 m-0">
-                    <ul className="entry-meta list-unstyled d-flex align-items-center m-0">
-                      <li>
-                        <a className="fs-7 link-secondary text-decoration-none d-flex align-items-center" href="#!">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" className="bi bi-calendar3" viewBox="0 0 16 16">
-                            <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
-                            <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
-                          </svg>
-                          <span className="ms-2 fs-7">11 Dec 2024</span>
-                        </a>
-                      </li>
-                    </ul>
-                    <p className='mt-3'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever</p>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div className="col-12 col-lg-4">
-              <article>
-                <div className="card border-0 bg-transparent">
-                  <figure className="card-img-top mb-4 overflow-hidden bsb-overlay-hover">
-                    <a href="#!">
-                      <img className="img-fluid" loading="lazy" src="./images/liver.jpeg" alt="Relationships" />
-                    </a>
-
-                  </figure>
-                  <div className="card-body m-0 p-0">
-                    <div className="entry-header mb-2">
-                      <ul className="entry-meta list-unstyled d-flex mb-3">
-                        <li>
-                          <a className="d-inline-flex px-2 py-1 link-primary text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-2 text-decoration-none fs-7" href="#!">Liver Health</a>
-                        </li>
-                      </ul>
-                      <h2 className="card-title entry-title h4 m-0">
-                        <a className="link-dark text-decoration-none" href="#!">TheManly, targets male reproductive</a>
-                      </h2>
-                    </div>
-                  </div>
-                  <div className="card-footer border-0 bg-transparent p-0 m-0">
-                    <ul className="entry-meta list-unstyled d-flex align-items-center m-0">
-                      <li>
-                        <a className="fs-7 link-secondary text-decoration-none d-flex align-items-center" href="#!">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" className="bi bi-calendar3" viewBox="0 0 16 16">
-                            <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
-                            <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
-                          </svg>
-                          <span className="ms-2 fs-7">11 Aug 2023</span>
-                        </a>
-                      </li>
-                    </ul>
-                    <p className='mt-3'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever</p>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div className="col-12 col-lg-4">
-              <article>
-                <div className="card border-0 bg-transparent">
-                  <figure className="card-img-top mb-4 overflow-hidden bsb-overlay-hover">
-                    <a href="#!">
-                      <img className="img-fluid" loading="lazy" src="./images/liver.jpeg" alt="Career" />
-                    </a>
-                  </figure>
-                  <div className="card-body m-0 p-0">
-                    <div className="entry-header mb-2">
-                      <ul className="entry-meta list-unstyled d-flex mb-3">
-                        <li>
-                          <a className="d-inline-flex px-2 py-1 link-primary text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-2 text-decoration-none fs-7" href="#!">Liver Health</a>
-                        </li>
-                      </ul>
-                      <h2 className="card-title entry-title h4 m-0">
-                        <a className="link-dark text-decoration-none" href="#!">TheManly, targets male reproductive</a>
-                      </h2>
-                    </div>
-                  </div>
-                  <div className="card-footer border-0 bg-transparent p-0 m-0">
-                    <ul className="entry-meta list-unstyled d-flex align-items-center m-0">
-                      <li>
-                        <a className="fs-7 link-secondary text-decoration-none d-flex align-items-center" href="#!">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" className="bi bi-calendar3" viewBox="0 0 16 16">
-                            <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
-                            <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
-                          </svg>
-                          <span className="ms-2 fs-7">2 Apr 2023</span>
-                        </a>
-                      </li>
-                    </ul>
-                    <p className='mt-3'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever</p>
-                  </div>
-
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-
-        <div className="container">
-          <div className="row">
-            <div className="col text-center">
-              <a href="#!" className="btn btn-primary mt-5 py-2 px-4">Read More</a>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
 
     </>
   );
