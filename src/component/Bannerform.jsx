@@ -7,7 +7,7 @@ import SwalAlert from './common/SwalAlert';
 import SelectField from './common/SelectField';
 import TextArea from './common/TextArea';
 import Swal from 'sweetalert2';
-import PaymentComponent from './common/PaymentComponent'; // Import the PaymentComponent
+import PaymentComponent from './common/PaymentComponent';
 
 const problemOptions = [
   "Erectile Dysfunction",
@@ -18,21 +18,15 @@ const problemOptions = [
   "Gut Issues",
   "Liver Health",
   "⁠Diabetes",
-  // "⁠Hair Fall",
-  // "⁠Obesity",
- 
- 
-  // "⁠Stamina & Strength",
-
+  "Hair loss",
   "Other"
 ];
 
-const Bannerform = () => {
-
+const BannerForm = () => {
   const [otp, setOtp] = useState('');
   const [isOtpSent, setIsOtpSent] = useState(false);
   const [isOtpVerified, setIsOtpVerified] = useState(false);
-  const [showPayment, setShowPayment] = useState(false); // State to show PaymentComponent
+  const [showPayment, setShowPayment] = useState(false);
 
   const formik = useFormik({
     initialValues: {
@@ -41,7 +35,7 @@ const Bannerform = () => {
       mobile: '',
       age: '',
       city: '',
-      problem: [],  // Array to hold multiple selections
+      problem: [], 
       problem_other: '',
       userMessage: '',
       provider: 'mobile', 
@@ -53,60 +47,65 @@ const Bannerform = () => {
       handleSubmit(values);
     }
   });
-  
-  // Handle form submission
+
   const handleSubmit = async (values) => {
     try {
-      const submissionData = {
-        ...values,
-        problem: values.problem.join(', '), // Convert array to comma-separated string
-        problemCategory: values.problem.join(', '), 
-      };
-  
-      const response = await axios.post('/auth/signup', submissionData, {
-        headers: {
-          Authorization: " ",
-          'DEVICE-TYPE': 'Web'
-        }
-      });
-  
-      if (response.status >= 200 && response.status < 300 && response.data?.responseStatus) {
-        const userId = response.data?.responseObject?.id; // Get userId from response
-  
-        if (userId) {
-          // Store userId in localStorage
-          localStorage.setItem('userId', userId);
-        }
-  
-        // Store user data in localStorage
-        localStorage.setItem('userName', values.fullName);
-        localStorage.setItem('email', values.email);
-        localStorage.setItem('contact', values.mobile);
+        // Prepare `problem` and `problemCategory` based on the value of `problem_other`
+        const problemValue = values.problem.includes("Other")
+            ? values.problem_other ? `Other, ${values.problem_other}` : "Other"
+            : values.problem.join(', ');
 
-        SwalAlert({
-          title: 'Success!',
-          message: 'Your form was successfully submitted. Please verify the OTP.',
-          type: 'success',
+        const submissionData = {
+            ...values,
+            problem: problemValue,                // Set problem with conditional formatting
+            problemCategory: problemValue         // Same for problemCategory
+        };
+
+        // Remove `problem_other` from submission data
+        delete submissionData.problem_other;
+
+        const response = await axios.post('/auth/signup', submissionData, {
+            headers: {
+                Authorization: " ",
+                'DEVICE-TYPE': 'Web'
+            }
         });
-        
-        setIsOtpSent(true);
-        showOtpPopup();
-      } else {
-        throw new Error("Unexpected API response.");
-      }
-    } catch (error) {
-      console.error('Error submitting form:', error);
-      SwalAlert({
-        title: 'Oops!',
-        message: 'Something went wrong. Please try again.',
-        type: 'error',
-      });
-    } finally {
-      formik.setSubmitting(false);
-    }
-  };
 
-  // Show OTP popup with Swal
+        if (response.status >= 200 && response.status < 300 && response.data?.responseStatus) {
+            const userId = response.data?.responseObject?.id;
+
+            if (userId) {
+                localStorage.setItem('userId', userId);
+            }
+            localStorage.setItem('userName', values.fullName);
+            localStorage.setItem('email', values.email);
+            localStorage.setItem('contact', values.mobile);
+
+            SwalAlert({
+                title: 'Success!',
+                message: 'Your form was successfully submitted. Please verify the OTP.',
+                type: 'success',
+            });
+            
+            setIsOtpSent(true);
+            showOtpPopup();
+        } else {
+            throw new Error("Unexpected API response.");
+        }
+    } catch (error) {
+        SwalAlert({
+            title: 'Oops!',
+            message: 'Something went wrong. Please try again.',
+            type: 'error',
+        });
+    } finally {
+        formik.setSubmitting(false);
+    }
+};
+
+
+
+
   const showOtpPopup = () => {
     Swal.fire({
       title: 'Enter OTP sent to your phone',
@@ -120,9 +119,9 @@ const Bannerform = () => {
         const otpValue = Swal.getPopup().querySelector('#otp-input').value;
         if (!otpValue) {
           Swal.showValidationMessage('Please enter the OTP');
-          return false; // Stop further execution if OTP is not entered
+          return false;
         }
-  
+
         try {
           const userId = localStorage.getItem('userId');
           const response = await axios.get(`/auth/verifyOtp`, {
@@ -136,11 +135,11 @@ const Bannerform = () => {
               Authorization: '-'
             }
           });
-  
+
           if (response.status >= 200 && response.status < 300) {
             setOtp(otpValue);
             setIsOtpVerified(true);
-            setShowPayment(true); // Show PaymentComponent on OTP success
+            setShowPayment(true);
             Swal.fire({
               title: 'Success!',
               text: 'OTP verified successfully!',
@@ -153,16 +152,18 @@ const Bannerform = () => {
         } catch (error) {
           Swal.showValidationMessage('Invalid OTP. Please try again.');
         }
-        return false; 
+        return false;
       }
     });
   };
 
   return (
     <>
-      {!showPayment && ( // Show BannerForm only if PaymentComponent is not showing
+      {!showPayment && (
         <form className="row g-3 p-4 rounded border" onSubmit={formik.handleSubmit}>
-          <p className="fw-bold text-white text-center h4 mb-0"><span className='d-block'>Start your wellness journey today</span></p>
+          <p className="fw-bold text-white text-center h4 mb-0">
+            <span className='d-block'>Start your wellness journey today</span>
+          </p>
           <small className='text-center text-white mt-2 mb-3 px-0'>
             Please share this short information about yourself <br/> and our experts will reach out to you very soon.
           </small>
@@ -174,7 +175,7 @@ const Bannerform = () => {
           <InputField label="City" name="city" type="text" formik={formik} />
           <SelectField label="Issue you are facing" name="problem" formik={formik} options={problemOptions} />
           
-          {formik?.values?.problem === "Other" && (
+          {formik.values.problem.includes("Other") && (
             <TextArea label="Other Problem" name="problem_other" type="text" formik={formik} showError={true} />
           )}
           
@@ -188,10 +189,9 @@ const Bannerform = () => {
         </form>
       )}
       
-      {/* Show PaymentComponent once OTP is verified */}
       {showPayment && <PaymentComponent />}
     </>
   );
 };
 
-export default Bannerform;
+export default BannerForm;

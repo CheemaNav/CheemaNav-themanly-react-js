@@ -1,23 +1,35 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 
 const SelectField = ({ label, name, formik, options }) => {
     const [isOpen, setIsOpen] = useState(false);
+    const dropdownRef = useRef(null);
 
     const handleCheckboxChange = (event) => {
         const { value, checked } = event.target;
         const selectedValues = formik.values[name] || [];
 
         if (checked) {
-            // Add the selected option
             formik.setFieldValue(name, [...selectedValues, value]);
         } else {
-            // Remove the deselected option
             formik.setFieldValue(name, selectedValues.filter(option => option !== value));
         }
     };
 
+    const handleClickOutside = (event) => {
+        if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+            setIsOpen(false);
+        }
+    };
+
+    useEffect(() => {
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
+
     return (
-        <div className="col-md-6 col-12">
+        <div className="col-md-6 col-12" ref={dropdownRef}>
             <label className="form-label">{label}</label>
             <div className="dropdown" onClick={() => setIsOpen(!isOpen)}>
                 <button
