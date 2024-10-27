@@ -13,10 +13,23 @@ const Home = () => {
         <div className="container">
           <div className="">
             <div className="row justify-content-between align-items-center">
-              <div className="col-12 col-md-6 mt-md-5 pt-md-5">
+              <div className="col-12 col-md-7 mt-md-5 pt-md-0">
                 <h1 className="text-white h5">
-                  <strong className="d-block mb-0 h1"> Reboot</strong><strong className="d-block mb-2 h1"> yourself </strong>The holistic wellness programme designed for Men!!</h1>
-                  <img className="Guaranteed" src="./images/guaranteed.png" alt="Guaranteed" />
+                  <strong className="d-block mb-0 h1"> Reboot</strong><strong className="d-block mb-2 h1"> yourself </strong>The holistic wellness programme designed for Men!!
+                  </h1>
+                      {/* <img className="Guaranteed" src="./images/guaranteed.png" alt="Guaranteed" /> */}
+                      <span className='mt-4 d-block text-white h5 step-title'>Follow 3 simple steps for your treatment.</span>
+                    <div className='banner_icon row pt-3'>
+                    <div className='col-md-4 col-12'>
+                      <p className='detail text-center'><span>Step 1</span><strong>Talk to our Expert</strong>Fill the Online Appointment Form on our website & fins out the real problem you are facing.</p>
+                    </div>
+                    <div className='col-md-4 col-12'>
+                      <p className='detail text-center'><span>Step 2</span><strong>Get your Treatment Plan</strong>Post proper diagnosis& severity of problem, Get your customised treatment plan </p>
+                    </div>
+                    <div className='col-md-4 col-12'>
+                      <p className='detail text-center'><span>Step 3</span><strong>Monitor Your Progress</strong>Our team will follow up on your progress & guide you on every step</p>
+                    </div>
+                  </div> 
                   </div>
 
               {/* <div className="col-12 col-md-6">
@@ -45,6 +58,26 @@ const Home = () => {
             <div className="row mt-4">
             <div className="col-12 col-md-4 mb-4">
                 <div className="card">
+                  <img className="card-img-top" src="./images/gut.jpeg" alt="Card image cap" />
+                  <div className="card-body">
+                    <h5 className="card-title">Erectile Dysfunction</h5>
+                    <p className="card-text"> Revitalize your strength naturally with Ayurveda: harnessing ancient herbs, balanced nutrition, and mindful practices to overcome ED and restore confidence.</p>
+
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 col-md-4 mb-4">
+                <div className="card">
+                  <img className="card-img-top" src="./images/Libido.jpeg" alt="Card image cap" />
+                  <div className="card-body">
+                    <h5 className="card-title">Early Ejaculation</h5>
+                    <p className="card-text">Unlock lasting confidence and control with Ayurveda’s natural, side-effect-free solutions for premature ejaculation.</p>
+
+                  </div>
+                </div>
+              </div>
+            <div className="col-12 col-md-4 mb-4">
+                <div className="card">
                   <img className="card-img-top" src="./images/Sperm.jpeg" alt="Card image cap" />
                   <div className="card-body">
                     <h5 className="card-title">Low Sperm Count</h5>
@@ -53,22 +86,34 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-            <div className="col-12 col-md-4 mb-4">
-                <div className="card">
-                  <img className="card-img-top" src="./images/ED.jpeg" alt="Card image cap" />
-                  <div className="card-body">
-                    <h5 className="card-title">Sexual Wellness</h5>
-                    <p className="card-text">Address men’s health issues such as Erectile Dysfunction (ED) and Premature Ejaculation (PME), Sperm Mortality, Loss of Libido and others with our targeted therapies.</p>
-
-                  </div>
-                </div>
-              </div>
+            
               <div className="col-12 col-md-4 mb-4">
                 <div className="card">
                   <img className="card-img-top" src="./images/Testosterone.jpeg" alt="Card image cap" />
                   <div className="card-body">
                     <h5 className="card-title">Low Testosterone</h5>
                     <p className="card-text">Our therapies focus on restoring hormonal balance to enhance energy, strength, and overall well-being.</p>
+
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 col-md-4 mb-4">
+                <div className="card">
+                  <img className="card-img-top" src="./images/ED.jpeg" alt="Card image cap" />
+                  <div className="card-body">
+                    <h5 className="card-title">Loss of Libido</h5>
+                    <p className="card-text">We provide personalized care to address hormonal or psychological factors, helping to boost sexual desire and performance.</p>
+
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-12 col-md-4 mb-4">
+                <div className="card">
+                  <img className="card-img-top" src="./images/gutissue.jpeg" alt="Card image cap" />
+                  <div className="card-body">
+                    <h5 className="card-title">Gut Issue</h5>
+                    <p className="card-text">Enhance your digestive health and balance your Agni (digestive fire) with our tailored treatments.</p>
 
                   </div>
                 </div>
@@ -84,23 +129,14 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-12 col-md-4 mb-4">
-                <div className="card">
-                  <img className="card-img-top" src="./images/Libido.jpeg" alt="Card image cap" />
-                  <div className="card-body">
-                    <h5 className="card-title">Loss of Libido</h5>
-                    <p className="card-text">We provide personalized care to address hormonal or psychological factors, helping to boost sexual desire and performance.</p>
-
-                  </div>
-                </div>
-              </div>
+             
 
              
               <div className="col-12 col-md-4 mb-4">
                 <div className="card">
                   <img className="card-img-top" src="./images/diabetes.jpeg" alt="Card image cap" />
                   <div className="card-body">
-                    <h5 className="card-title">Diabetes Management</h5>
+                    <h5 className="card-title">Diabetes</h5>
                     <p className="card-text">Manage your blood sugar levels naturally with our comprehensive Ayurvedic approach.</p>
 
                   </div>
@@ -108,15 +144,16 @@ const Home = () => {
               </div>
               <div className="col-12 col-md-4 mb-4">
                 <div className="card">
-                  <img className="card-img-top" src="./images/gut.jpeg" alt="Card image cap" />
+                  <img className="card-img-top" src="./images/hair.jpeg" alt="Card image cap" />
                   <div className="card-body">
-                    <h5 className="card-title">Gut Issue</h5>
-                    <p className="card-text">Enhance your digestive health and balance your Agni (digestive fire) with our tailored treatments.</p>
+                    <h5 className="card-title">Hair loss</h5>
+                    <p className="card-text">Revitalize your roots and reclaim your confidence with Ayurvedic remedies tailored to restore, nourish, and strengthen men's hair naturally.</p>
 
                   </div>
                 </div>
               </div>
-              <div className="col-12 col-md-4 mb-4">
+             
+              {/* <div className="col-12 col-md-4 mb-4">
                 <div className="card">
                   <img className="card-img-top" src="./images/Energy.jpeg" alt="Card image cap" />
                   <div className="card-body">
@@ -125,7 +162,7 @@ const Home = () => {
 
                   </div>
                 </div>
-              </div>
+              </div> */}
            
              
              
