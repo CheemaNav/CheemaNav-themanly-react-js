@@ -61,7 +61,7 @@ const Home = () => {
                   <img className="card-img-top" src="./images/gut.jpeg" alt="Card image cap" />
                   <div className="card-body">
                     <h5 className="card-title">Erectile Dysfunction</h5>
-                    <p className="card-text"> Revitalize your strength naturally with Ayurveda: harnessing ancient herbs, balanced nutrition, and mindful practices to overcome ED and restore confidence.</p>
+                    <p className="card-text"> Unlock your true potential with Ayurvedic solutions for ED, embracing nature’s wisdom for robust health. Reclaim your vitality and confidence through time-honored practices.</p>
 
                   </div>
                 </div>
