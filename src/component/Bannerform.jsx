@@ -5,7 +5,7 @@ import { bookAppointmentSchema } from '../utils/validations/FormValidation';
 import InputField from './common/InputFIeld';
 import SwalAlert from './common/SwalAlert';
 import SelectField from './common/SelectField';
-import TextArea from './common/TextArea';
+import TextArea from './common/TextArea'; 
 import Swal from 'sweetalert2';
 import PaymentComponent from './common/PaymentComponent';
 

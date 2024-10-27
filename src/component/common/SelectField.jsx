@@ -53,7 +53,7 @@ const SelectField = ({ label, name, formik, options }) => {
                                 {option}
                             </label>
                         </div>
-                    ))}
+                    ))} 
                 </div>
             </div> 
             {formik.touched[name] && formik.errors[name] ? (

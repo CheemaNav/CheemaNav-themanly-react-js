@@ -64,7 +64,7 @@ const Home = () => {
                     <p className="card-text"> Unlock your true potential with Ayurvedic solutions for ED, embracing nature’s wisdom for robust health. Reclaim your vitality and confidence through time-honored practices.</p>
 
                   </div>
-                </div>
+                </div> 
               </div>
               <div className="col-12 col-md-4 mb-4">
                 <div className="card">

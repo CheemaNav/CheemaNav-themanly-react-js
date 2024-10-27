@@ -8,7 +8,7 @@ const TextArea = ({ label, name, formik, type = 'text', showError = false }) => 
         className={`form-control ${formik.touched[name] && formik.errors[name] ? "is-invalid" : ""}`}
         rows="3"
         name={name}
-        spellCheck="false"
+        spellCheck="false" 
         value={formik.values[name]}
         onChange={formik.handleChange}
         onBlur={formik.handleBlur}

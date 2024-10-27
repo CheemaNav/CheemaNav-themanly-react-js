@@ -217,7 +217,7 @@ footer .social_icon svg { width: 17px; height: 17px; }
     .slick-next{right: 10px; z-index: 9;}
     .slick-prev { left: 10px;z-index: 9;}  
     .banner h1 strong {font-size: 36px;}
-    .banner form{margin-top: 10px;}
+    .banner form{margin-top: 10px;} 
     .banner img.Guaranteed{margin-top: 0;}
     .expert_sec .col { flex: 100% !important; }
     .expert_sec img.Guaranteed { margin-bottom: 40px; margin-top: 20px; position: unset; }
