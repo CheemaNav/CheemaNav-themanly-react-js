@@ -118,7 +118,7 @@ h1, h2, h3, h4, h5, h6, strong{font-family: 'rocaone-blitregular';}
 .btn-primary{background-color: #084060 !important; border-color:#084060 !important;}
 .btn-primary:hover{background-color: #02263b !important; border-color:#02263b !important;}
 .text-primary{color: #084060 !important;}
-
+ 
 header{ position: fixed; top: 0; width: 100%; z-index:9999; background: #fff; }
 header.active {animation: slideDown 0.35s ease-out; }
 header img.logo { width: 140px;}
