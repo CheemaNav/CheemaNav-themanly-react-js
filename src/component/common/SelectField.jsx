@@ -14,6 +14,7 @@ const SelectField = ({ label, name, formik, options }) => {
             formik.setFieldValue(name, selectedValues.filter(option => option !== value));
         }
     };
+    
     const handleClickOutside = (event) => {
         if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
             setIsOpen(false);
