@@ -55,7 +55,7 @@ const SelectField = ({ label, name, formik, options }) => {
                         </div>
                     ))}
                 </div>
-            </div>
+            </div> 
             {formik.touched[name] && formik.errors[name] ? (
                 <div className="invalid-feedback">{formik.errors[name]}</div>
             ) : null}
