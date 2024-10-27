@@ -5,7 +5,7 @@ const SelectField = ({ label, name, formik, options }) => {
     const dropdownRef = useRef(null);
 
     const handleCheckboxChange = (event) => {
-        const { value, checked } = event.target;  
+        const { value, checked } = event.target;     
         const selectedValues = formik.values[name] || [];
 
         if (checked) {
