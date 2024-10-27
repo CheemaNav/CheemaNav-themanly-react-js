@@ -71,7 +71,7 @@ const Home = () => {
                   <img className="card-img-top" src="./images/Libido.jpeg" alt="Card image cap" />
                   <div className="card-body">
                     <h5 className="card-title">Early Ejaculation</h5>
-                    <p className="card-text">Unlock lasting confidence and control with Ayurveda’s natural, side-effect-free solutions for premature ejaculation.</p>
+                    <p className="card-text">Conquer PME naturally with our Ayurvedic solutions and reclaim your well-being. Embrace holistic health and experience the profound benefits of time-honored traditions.</p>
 
                   </div>
                 </div>
