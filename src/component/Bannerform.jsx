@@ -27,6 +27,7 @@ const BannerForm = () => {
   const [isOtpSent, setIsOtpSent] = useState(false);
   const [isOtpVerified, setIsOtpVerified] = useState(false);
   const [showPayment, setShowPayment] = useState(false);
+    const [authToken, setAuthToken] = useState(''); 
 
   const formik = useFormik({
     initialValues: {
@@ -137,9 +138,11 @@ const BannerForm = () => {
           });
 
           if (response.status >= 200 && response.status < 300) {
+            const token = response.data?.bearerToken;
             setOtp(otpValue);
             setIsOtpVerified(true);
             setShowPayment(true);
+            localStorage.setItem('authToken', token); 
             Swal.fire({
               title: 'Success!',
               text: 'OTP verified successfully!',

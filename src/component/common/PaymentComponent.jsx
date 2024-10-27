@@ -83,9 +83,9 @@ const PaymentComponent = () => {
                 }
             },
             prefill: {
-                name: "Dharmender",
-                email: "kumardharm234@gmail.com",
-                contact: 7580052613,
+                name: userName,
+                email: email,
+                contact: contact,
             },
             theme: {
                 color: "#3399cc",
@@ -104,7 +104,7 @@ const PaymentComponent = () => {
 
     return (
         <div className="payment_btn">
-            <span className="h2">Razorpay Payment Integration</span>
+            <span className="h2">Make your payment here</span>
             <button className="btn btn-primary w-100" onClick={handlePayment}>Pay Now</button>
         </div>
     );
