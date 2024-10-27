@@ -5,7 +5,7 @@ const SelectField = ({ label, name, formik, options }) => {
     const dropdownRef = useRef(null);
 
     const handleCheckboxChange = (event) => {
-        const { value, checked } = event.target;
+        const { value, checked } = event.target;  
         const selectedValues = formik.values[name] || [];
 
         if (checked) {
@@ -14,7 +14,7 @@ const SelectField = ({ label, name, formik, options }) => {
             formik.setFieldValue(name, selectedValues.filter(option => option !== value));
         }
     };
-    
+
     const handleClickOutside = (event) => {
         if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
             setIsOpen(false);
