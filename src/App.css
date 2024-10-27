@@ -225,8 +225,7 @@ footer .social_icon svg { width: 17px; height: 17px; }
     .banner{    padding-block: 30px;}
     .banner small br{display: none;}
     .expert_sec .col-12.col-md-4 {padding-inline: 30px;}
-    .expert_sec .card img {
-        height: 220px;}
+    .expert_sec .card img { height: 220px;}
         header nav.navbar { justify-content: center; }
         .banner_icon .detail span{right: 0;}
         .banner_icon .col-md-4.col-12:not(.banner_icon .col-md-4.col-12:last-child) { margin-bottom: 20px; }
