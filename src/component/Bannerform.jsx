@@ -138,7 +138,8 @@ const BannerForm = () => {
           });
 
           if (response.status >= 200 && response.status < 300) {
-            const token = response.data?.bearerToken;
+            const token = response.data.responseObject.bearerToken;
+            debugger;
             setOtp(otpValue);
             setIsOtpVerified(true);
             setShowPayment(true);

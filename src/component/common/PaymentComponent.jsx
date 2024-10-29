@@ -9,12 +9,16 @@ const PaymentComponent = () => {
     // Call Spring Boot API to create an order
     const createOrder = async () => {
         try {
+
+            const token = localStorage.getItem('authToken');
+        if (!token) throw new Error("Token not found in localStorage");
+
             const amountInPaise = 499 * 100;
             const response = await fetch(`https://api.themanly.in/themanly/payment/generatePaymentRequest?amount=${amountInPaise}`, {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",
-                    "Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI0NiIsImlhdCI6MTcyOTE4MDA1NSwiZXhwIjoxNzMwMDQ0MDU1fQ.zxFMkJAHmstWQCbS4q6t9hJ3ZAQLHSNMPGa3-urtclCVUjO4cO-iVQnjAe5KUjpuoS-tJj2SJb4IeHLEkCJ0xA"
+                  "Authorization": `Bearer ${token}` 
                 }
             });
     
@@ -104,7 +108,7 @@ const PaymentComponent = () => {
 
     return (
         <div className="payment_btn">
-            <span className="h2">Make your payment here</span>
+            <span className="h2">Make your payment of <strong>Rs 499</strong> here for appointment booking</span>
             <button className="btn btn-primary w-100" onClick={handlePayment}>Pay Now</button>
         </div>
     );
