@@ -121,7 +121,7 @@ h1, h2, h3, h4, h5, h6, strong{font-family: 'rocaone-blitregular';}
  
 header{ position: fixed; top: 0; width: 100%; z-index:9999; background: #fff; }
 header.active {animation: slideDown 0.35s ease-out; }
-header img.logo { width: 140px;}
+header img.logo { width: 140px;} 
 header ul.navbar-nav svg { margin-right: 5px; position: relative; top: -1px; }
 header li.nav-item a.nav-link { color: #111;}
 .banner form .invalid-feedback { display: none; }
