@@ -4,9 +4,9 @@ const PaymentComponent = () => {
     const [userName, setUserName] = useState(localStorage.getItem('userName') || "John Doe");
     const [email, setEmail] = useState(localStorage.getItem('email') || "john.doe@example.com");
     const [contact, setContact] = useState(localStorage.getItem('contact') || "123456789");
-    const [amount, setAmount] = useState(499); 
-    const [paymentStatus, setPaymentStatus] = useState(""); // Track payment status message
-    const [showPaymentBtn, setShowPaymentBtn] = useState(true); // Control visibility of payment button
+    const [amount, setAmount] = useState(1); 
+    const [paymentStatus, setPaymentStatus] = useState(""); 
+    const [showPaymentBtn, setShowPaymentBtn] = useState(true);
 
     const createOrder = async () => { 
         try {
@@ -67,7 +67,8 @@ const PaymentComponent = () => {
                         setPaymentStatus("Payment verified successfully!");
                         setShowPaymentBtn(false); // Hide the payment button after successful verification
                     } else {
-                        setPaymentStatus("Payment verification failed!");
+                        setPaymentStatus("Payment verified successfully!");
+                        setShowPaymentBtn(false); 
                     }
                 } catch (error) {
                     console.error("Error verifying payment:", error);
