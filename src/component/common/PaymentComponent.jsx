@@ -4,70 +4,58 @@ const PaymentComponent = () => {
     const [userName, setUserName] = useState(localStorage.getItem('userName') || "John Doe");
     const [email, setEmail] = useState(localStorage.getItem('email') || "john.doe@example.com");
     const [contact, setContact] = useState(localStorage.getItem('contact') || "123456789");
-    const [amount, setAmount] = useState(500); 
+    const [amount, setAmount] = useState(1);
+    const [paymentStatus, setPaymentStatus] = useState(""); // Track payment status message
+    const [showPaymentBtn, setShowPaymentBtn] = useState(true); // Control visibility of payment button
 
-    // Call Spring Boot API to create an order
     const createOrder = async () => {
         try {
-
             const token = localStorage.getItem('authToken');
-        if (!token) throw new Error("Token not found in localStorage");
+            if (!token) throw new Error("Token not found in localStorage");
 
-            const amountInPaise = 499 * 100;
+            const amountInPaise = amount * 100;
             const response = await fetch(`https://api.themanly.in/themanly/payment/generatePaymentRequest?amount=${amountInPaise}`, {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",
-                  "Authorization": `Bearer ${token}` 
+                    "Authorization": `Bearer ${token}`
                 }
             });
-    
+
             const order = await response.json();
-    
-            // Log the full API response to ensure it contains the expected data
-            console.log("API Response:", order);
-    
-            // Check if the orderId is present in the responseObject
             if (!order.responseObject || !order.responseObject.orderId) {
                 throw new Error('Invalid order data');
             }
-    
-            // Return the orderId from responseObject
             return order.responseObject.orderId;
         } catch (error) {
             console.error("Error creating order:", error);
-            return null; // Return null in case of error
+            return null;
         }
     };
 
     const handlePayment = async () => {
-        const orderId = await createOrder(); // Get the order ID
-
+        const orderId = await createOrder();
         if (!orderId) {
-            alert("Failed to create order. Please try again.");
-            return; // Exit if orderId is not available
+            setPaymentStatus("Failed to create order. Please try again.");
+            return;
         }
 
         const options = {
-            key:  "rzp_live_kkj0s2mhMNFrxC", 
-            amount: 1000 * 100, // Example amount in INR, adjust accordingly
+            key: "rzp_live_kkj0s2mhMNFrxC",
+            amount: amount * 100,
             currency: "INR",
-            name: userName, 
-            image: "https://example.com/your_logo",
-            order_id: orderId, // Use the orderId from the response
+            name: userName,
+            image: "https://themanly.in/assets/manly-logo-DfGF_eZi.webp",
+            order_id: orderId,
             handler: async function (response) {
-                alert("Payment successful!");
-                alert("Payment ID: " + response.razorpay_payment_id);
-                alert("Order ID: " + response.razorpay_order_id);
-                alert("Signature: " + response.razorpay_signature);
-
-                // Verify the payment on the backend
                 try {
+                    const token = localStorage.getItem('authToken');
                     const verifyPayment = await fetch("https://api.themanly.in/themanly/verifyPayment", {
                         method: "POST",
                         headers: {
                             "Content-Type": "application/json",
-                        },     
+                            "Authorization": `Bearer ${token}`
+                        },
                         body: JSON.stringify({
                             paymentId: response.razorpay_payment_id,
                             orderId: response.razorpay_order_id,
@@ -77,13 +65,14 @@ const PaymentComponent = () => {
 
                     const result = await verifyPayment.json();
                     if (result.success) {
-                        alert("Payment verified successfully!");
+                        setPaymentStatus("Payment verified successfully!");
+                        setShowPaymentBtn(false); // Hide the payment button after successful verification
                     } else {
-                        alert("Payment verification failed!");
+                        setPaymentStatus("Payment verification failed!");
                     }
                 } catch (error) {
                     console.error("Error verifying payment:", error);
-                    alert("Payment verification failed!");
+                    setPaymentStatus("Payment verification failed!");
                 }
             },
             prefill: {
@@ -99,17 +88,25 @@ const PaymentComponent = () => {
         const rzp1 = new window.Razorpay(options);
 
         rzp1.on("payment.failed", function (response) {
-            alert("Payment Failed");
-            alert(response.error.description);
+            setPaymentStatus("Payment failed: " + response.error.description);
         });
 
         rzp1.open();
     };
 
     return (
-        <div className="payment_btn">
-            <span className="h2">Make your payment of <strong>Rs 499</strong> here for appointment booking</span>
-            <button className="btn btn-primary w-100" onClick={handlePayment}>Pay Now</button>
+        <div>
+            {showPaymentBtn ? (
+                <div className="payment_btn">
+                    <span className="h2">Make your payment of <strong>Rs {amount}</strong> here for appointment booking</span>
+                    <button className="btn btn-primary w-100" onClick={handlePayment}>Pay Now</button>
+                </div>
+            ) : null}
+            {paymentStatus && (
+                <div className="payment-status">
+                    <p>{paymentStatus}</p>
+                </div>
+            )}
         </div>
     );
 };
