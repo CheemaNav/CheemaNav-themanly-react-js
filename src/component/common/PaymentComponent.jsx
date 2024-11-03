@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const PaymentComponent = () => {
+const PaymentComponent = () => { 
     const [userName, setUserName] = useState(localStorage.getItem('userName') || "John Doe");
     const [email, setEmail] = useState(localStorage.getItem('email') || "john.doe@example.com");
     const [contact, setContact] = useState(localStorage.getItem('contact') || "123456789");
