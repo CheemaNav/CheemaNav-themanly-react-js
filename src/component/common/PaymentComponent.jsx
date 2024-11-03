@@ -8,7 +8,7 @@ const PaymentComponent = () => {
     const [paymentStatus, setPaymentStatus] = useState(""); // Track payment status message
     const [showPaymentBtn, setShowPaymentBtn] = useState(true); // Control visibility of payment button
 
-    const createOrder = async () => {
+    const createOrder = async () => { 
         try {
             const token = localStorage.getItem('authToken');
             if (!token) throw new Error("Token not found in localStorage");
