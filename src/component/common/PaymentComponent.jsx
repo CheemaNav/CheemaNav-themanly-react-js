@@ -12,7 +12,6 @@ const PaymentComponent = () => {
         try {
             const token = localStorage.getItem('authToken');
             if (!token) throw new Error("Token not found in localStorage");
-
             const amountInPaise = amount * 100;
             const response = await fetch(`https://api.themanly.in/themanly/payment/generatePaymentRequest?amount=${amountInPaise}`, {
                 method: "GET",
