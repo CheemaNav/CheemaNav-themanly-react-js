@@ -123,7 +123,7 @@ header{ position: fixed; top: 0; width: 100%; z-index:9999; background: #fff; }
 header.active {animation: slideDown 0.35s ease-out; }
 header img.logo { width: 140px;}
 header ul.navbar-nav svg { margin-right: 5px; position: relative; top: -1px; }
-header li.nav-item a.nav-link { color: #111; }
+header li.nav-item a.nav-link { color: #f75050; }
 .banner form .invalid-feedback { display: none; }
 .banner h1 { font-family: unset !important; }
 .banner img.Guaranteed { width: 150px; transform: rotate(-18deg); margin-top:0px; filter: drop-shadow(0px 2px 2px black) sepia(4); }
