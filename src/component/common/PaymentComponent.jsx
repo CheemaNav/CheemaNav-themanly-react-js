@@ -98,13 +98,13 @@ const PaymentComponent = () => {
         <div>
             {showPaymentBtn ? (
                 <div className="payment_btn">
-                    <span className="h2">Make your payment of <strong>Rs {amount}</strong> here for appointment booking</span>
+                    <span className="h2 mb-2">Make your payment of <strong>Rs 499</strong> here for appointment booking</span>
                     <button className="btn btn-primary w-100" onClick={handlePayment}>Pay Now</button>
                 </div>
             ) : null}
             {paymentStatus && (
-                <div className="payment-status">
-                    <p>{paymentStatus}</p>
+                <div className="payment-status payment_btn mt-3">
+                    <span className="h2 mb-0">{paymentStatus}</span>
                 </div>
             )}
         </div>
