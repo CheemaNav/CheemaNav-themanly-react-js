@@ -40,7 +40,7 @@ const PaymentComponent = () => {
         }
 
         const options = {
-            key: "rzp_live_kkj0s2mhMNFrxC",
+            key: "rzp_test_aLaCdzPnXItCCc",
             amount: amount * 100,
             currency: "INR",
             name: userName,
