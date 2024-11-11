@@ -12,7 +12,7 @@ const PaymentComponent = () => {
         try {
             const token = localStorage.getItem('authToken');
             if (!token) throw new Error("Token not found in localStorage");
-            const amountInPaise = amount * 100;
+            const amountInPaise = amount;
             const response = await fetch(`https://api.themanly.in/themanly/payment/generatePaymentRequest?amount=${amountInPaise}`, {
                 method: "GET",
                 headers: {
@@ -22,10 +22,12 @@ const PaymentComponent = () => {
             });
 
             const order = await response.json();
-            if (!order.responseObject || !order.responseObject.orderId) {
+            debugger;
+            if (!order.responseObject || !order.responseObject.orderId || !order.responseObject.apiKey) {
+                
                 throw new Error('Invalid order data');
             }
-            return order.responseObject.orderId;
+            return { orderId: order.responseObject.orderId, apiKey: order.responseObject.apiKey };
         } catch (error) {
             console.error("Error creating order:", error);
             return null;
@@ -33,15 +35,17 @@ const PaymentComponent = () => {
     };
 
     const handlePayment = async () => {
-        const orderId = await createOrder();
-        if (!orderId) {
+        const orderData = await createOrder();
+        if (!orderData) {
             setPaymentStatus("Failed to create order. Please try again.");
             return;
         }
 
+        const { orderId, apiKey } = orderData;
+
         const options = {
-            key: "rzp_test_aLaCdzPnXItCCc",
-            amount: amount * 100,
+            key: apiKey,
+            amount: amount,
             currency: "INR",
             name: userName,
             image: "https://themanly.in/assets/manly-logo-DfGF_eZi.webp",
@@ -49,7 +53,7 @@ const PaymentComponent = () => {
             handler: async function (response) {
                 try {
                     const token = localStorage.getItem('authToken');
-                    const verifyPayment = await fetch("https://api.themanly.in/themanly/verifyPayment", {
+                    const verifyPayment = await fetch("https://api.themanly.in/themanly/payment/verifyPayment/", {
                         method: "POST",
                         headers: {
                             "Content-Type": "application/json",
