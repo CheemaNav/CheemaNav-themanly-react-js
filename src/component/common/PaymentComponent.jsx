@@ -68,10 +68,10 @@ const PaymentComponent = () => {
 
                     const result = await verifyPayment.json();
                     if (result.success) {
-                        setPaymentStatus("Payment verified successfully!");
+                        setPaymentStatus("Thank you for the payment, our team will connect with you soon");
                         setShowPaymentBtn(false); // Hide the payment button after successful verification
                     } else {
-                        setPaymentStatus("Payment verified successfully!");
+                        setPaymentStatus("Thank you for the payment, our team will connect with you soon");
                         setShowPaymentBtn(false); 
                     }
                 } catch (error) {
