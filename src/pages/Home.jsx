@@ -19,15 +19,15 @@ const Home = () => {
                   </h1>
                       {/* <img className="Guaranteed" src="./images/guaranteed.png" alt="Guaranteed" /> */}
                       <span className='mt-4 d-block text-white h5 step-title'>Follow 3 simple steps for your treatment.</span>
-                    <div className='banner_icon row pt-3'>
+                      <div className='banner_icon row pt-3'>
                     <div className='col-md-4 col-12'>
-                      <p className='detail text-center'><span>Step 1</span><strong>Talk to our Expert</strong>Fill the Online Appointment Form on our website & fins out the real problem you are facing.</p>
+                      <p className='detail text-center'><img src="./images/Icon1.png"></img> <span>Step 1</span><strong>Talk to our Expert</strong></p>
                     </div>
                     <div className='col-md-4 col-12'>
-                      <p className='detail text-center'><span>Step 2</span><strong>Get your Treatment Plan</strong>Post proper diagnosis& severity of problem, Get your customised treatment plan </p>
+                      <p className='detail text-center'><img src="./images/Icon2.png"></img><span>Step 2</span><strong>Get your Treatment Plan</strong></p>
                     </div>
                     <div className='col-md-4 col-12'>
-                      <p className='detail text-center'><span>Step 3</span><strong>Monitor Your Progress</strong>Our team will follow up on your progress & guide you on every step</p>
+                      <p className='detail text-center'><img src="./images/Icon3.png"></img><span>Step 3</span><strong>Monitor Your Progress</strong></p>
                     </div>
                   </div> 
                   </div>

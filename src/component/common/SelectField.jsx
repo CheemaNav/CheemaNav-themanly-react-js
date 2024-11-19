@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 
 const SelectField = ({ label, name, formik, options }) => {
     const [isOpen, setIsOpen] = useState(false);
+    const [selectedText, setSelectedText] = useState('Select issue');
     const dropdownRef = useRef(null);
 
     const handleCheckboxChange = (event) => {
@@ -10,8 +11,15 @@ const SelectField = ({ label, name, formik, options }) => {
 
         if (checked) {
             formik.setFieldValue(name, [...selectedValues, value]);
+            if (!selectedValues.length) {
+                setSelectedText(value); // Set the button text to the first selected option
+            }
         } else {
-            formik.setFieldValue(name, selectedValues.filter(option => option !== value));
+            const updatedValues = selectedValues.filter(option => option !== value);
+            formik.setFieldValue(name, updatedValues);
+            if (value === selectedText) {
+                setSelectedText(updatedValues[0] || 'Select issue'); // Update button text if the first option is deselected
+            }
         }
     };
 
@@ -38,7 +46,7 @@ const SelectField = ({ label, name, formik, options }) => {
                     aria-haspopup="true"
                     aria-expanded={isOpen}
                 >
-                    Select issue
+                    {selectedText}
                 </button>
                 <div className={`dropdown-menu ${isOpen ? 'show' : ''}`}>
                     {options?.map((option, index) => (
