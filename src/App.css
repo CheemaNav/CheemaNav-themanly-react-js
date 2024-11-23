@@ -168,7 +168,7 @@ section.review_Sec .card-body.card span.rounded-circle { display: flex; align-it
 
 footer.bg-dark { background: #000d14 !important; }
 footer.bg-dark .bottom_footer { background: #010b10;font-size: 12px;}
-footer .logo { width: 200px; filter: invert(1) brightness(8.5);}
+footer .logo { width: 200px; }
 footer i { margin-right: 8px; }
 footer i svg { width: 18px; height: 18px; }
 footer .contact p { display: flex; }
