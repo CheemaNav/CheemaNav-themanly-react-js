@@ -246,6 +246,7 @@ div#navbarSupportedContent { position: fixed; background: #fff; width: 70%; heig
         .banner_icon .col-md-4.col-12:not(.banner_icon .col-md-4.col-12:last-child) { margin-bottom: 20px; }
         .top-bar .collapse.navbar-collapse { flex-direction: column; }
         .top-bar .collapse.navbar-collapse a.nav-link { padding-block: 4px; font-size: 13px; }
+        header ul.dropdown-menu { border: 0; padding-top: 0; }
 }
 
 
