@@ -25,6 +25,8 @@ function Layout() {
 
   return (
     <>
+      
+      <header className={`py-0 ${isScrolled ? 'active' : ''}`}>
       <div className='top-bar'>
         <div className='container'>
           <div className='d-flex align-items-center justify-content-between'>
@@ -54,10 +56,9 @@ function Layout() {
           </div>
         </div>
       </div>
-      <header className={`py-3 ${isScrolled ? 'active' : ''}`}>
-
         <div className="container">
-          <nav className="navbar navbar-expand-lg navbar-light p-0 justify-content-between">
+       
+          <nav className="navbar navbar-expand-lg navbar-light py-3 justify-content-between">
             <Link to="/" className="d-flex align-items-center">
               <img className="logo" alt="logo" src={logo} />
             </Link>
@@ -97,8 +98,6 @@ function Layout() {
 
             </div>
           </nav>
-
-
         </div>
       </header>
 

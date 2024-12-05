@@ -129,7 +129,7 @@ header li.nav-item a.nav-link { color: #111;}
 header li.nav-item a.nav-link.dropdown-toggle:after { border-right: 2px solid; border-bottom: 2px solid; border-top: 0; border-left: 0; width: 7px; height: 7px; display: inline-block; transform: rotate(45deg); position: relative; top: 1px; margin-left: 8px; }
 .top-bar ul.navbar-nav { flex-direction: row; gap: 15px; }
 .top-bar { background: #084060; padding-block: 2px; }
-.top-bar a.nav-link { color: #fff;font-size: 14px; }
+.top-bar li.nav-item a.nav-link { color: #fff;font-size: 14px; }
 .top-bar a.nav-link svg { margin-right: 6px; }
 
 .banner form .invalid-feedback { display: none; }
