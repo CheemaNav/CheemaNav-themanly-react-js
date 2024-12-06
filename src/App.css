@@ -228,6 +228,9 @@ div#navbarSupportedContent { position: fixed; background: #fff; width: 70%; heig
     transition: .2s ease-out .12s; }
     div#navbarSupportedContent.show { transform: translate(00%, 0); }
     header li.nav-item { padding: 0 0 6px; }
+    header button.navbar-toggler[aria-expanded="true"] { background-image: url(data:image/svg+xml,%3Csvg%20height%3D%2220%22%20width%3D%2220%22%20viewBox%3D%220%200%2016%2017%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M14%2014.498%202.001%202.5M2%2014.498%2013.999%202.5%22%20stroke%3D%22%23333437%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E); background-repeat: no-repeat; background-size: 24px; background-position: center; background-color: #fff; }
+    header button.navbar-toggler[aria-expanded="true"] span.navbar-toggler-icon { visibility: hidden; }
+    .navbar-toggler-icon{    filter: brightness(0.0);   }
 
 }
 
