@@ -123,15 +123,17 @@ header{  top: 0; width: 100%; z-index:9999; background: #fff; }
 header.active {animation: slideDown 0.35s ease-out; position: fixed;}
 header img.logo { width: 140px;}
 header button.navbar-toggler { border: 0; outline: unset !important; box-shadow: unset !important; }
-
+.top-bar ul.navbar-nav.social svg { width: auto; height: 14px;top: 0;}
+.top-bar ul.navbar-nav.social .youtube svg { height: 16px; }
+.top-bar ul.navbar-nav.social { gap: 5px; }
 header ul.navbar-nav svg { margin-right: 5px; position: relative; top: -1px; }
-header li.nav-item { padding-left: 10px; }
+header li.nav-item { padding-left: 6px; }
 header li.nav-item a.nav-link { color: #111;}
 header li.nav-item a.nav-link.dropdown-toggle:after { border-right: 2px solid; border-bottom: 2px solid; border-top: 0; border-left: 0; width: 7px; height: 7px; display: inline-block; transform: rotate(45deg); position: relative; top: 1px; margin-left: 8px; }
 .top-bar ul.navbar-nav { flex-direction: row; gap: 15px; }
 .top-bar { background: #084060; padding-block: 2px; }
-.top-bar li.nav-item a.nav-link { color: #fff;font-size: 14px; }
-.top-bar a.nav-link svg { margin-right: 6px; }
+.top-bar li.nav-item a.nav-link { color: #fff;font-size: 12px; }
+.top-bar a.nav-link svg { margin-right: 6px;    width: 14px;}
 
 .banner form .invalid-feedback { display: none; }
 .banner h1 { font-family: unset !important; }
@@ -224,7 +226,7 @@ footer .social_icon svg { width: 17px; height: 17px; }
 .banner_icon .detail img { width: 80px; margin-bottom: 12px;filter: invert(1);}
 
 @media only screen and (max-width: 991px) {
-div#navbarSupportedContent { position: fixed; background: #fff; width: 70%; height: 100% !important; top: 0; left: 0; z-index: 9; padding: 30px;        transform: translate(-100%, 0);box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+div#navbarSupportedContent { position: fixed; background: #fff; width: 70%; height: 100vh !important; top: 0; left: 0; z-index: 9; padding: 30px;        transform: translate(-100%, 0);box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     transition: .2s ease-out .12s; }
     div#navbarSupportedContent.show { transform: translate(00%, 0); }
     header li.nav-item { padding: 0 0 6px; }
@@ -235,15 +237,17 @@ div#navbarSupportedContent { position: fixed; background: #fff; width: 70%; heig
 }
 
 @media only screen and (max-width: 767px) {
+    .top-bar ul.navbar-nav.social {display: none !important;}
     .slick-next{right: 10px; z-index: 9;}
     .slick-prev { left: 10px;z-index: 9;}  
+    header { position: fixed; top: 0; animation: unset !important;}
     .banner h1 strong {font-size: 36px;}
     .banner form{margin-top: 10px;}      
     .banner img.Guaranteed{margin-top: 0;}
     .expert_sec .col { flex: 100% !important; }
     .expert_sec img.Guaranteed { margin-bottom: 40px; margin-top: 20px; position: unset; }
     footer.bg-dark .bottom_footer .container.d-flex { flex-direction: column; gap: 10px; }
-    .banner{    padding-block: 30px;}
+    .banner{margin-top: 140px;padding-block: 30px;}
     .banner small br{display: none;}
     .expert_sec .col-12.col-md-4 {padding-inline: 30px;}
     .expert_sec .card img { height: 220px;}
@@ -254,7 +258,9 @@ div#navbarSupportedContent { position: fixed; background: #fff; width: 70%; heig
         .top-bar .collapse.navbar-collapse a.nav-link { padding-block: 4px; font-size: 13px; }
         header ul.dropdown-menu { border: 0; padding-top: 0; }
         .top-bar {padding-top: 8px;}
-        header .top-bar li.nav-item{padding: 0 0 3px;}
+        header .top-bar li.nav-item{padding: 0; width: 50%; display: inline-block;}
+        .top-bar ul.navbar-nav { display: block; width: 100%; text-align: center; }
+        header .top-bar li.nav-item:first-child { width: 100%; }
 
 
 }
