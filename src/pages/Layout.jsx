@@ -81,8 +81,8 @@ function Layout() {
             <Link to="/" className="d-flex align-items-center">
               <img className="logo" alt="logo" src={logo} />
             </Link>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
 
@@ -93,12 +93,12 @@ function Layout() {
                 <li className="nav-item">
                   <a className="nav-link" href='#form' >Book Appointment</a>
                 </li>
-                <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <li className="nav-item dropdown">
+          <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Products
           </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="https://shop.themanly.in/">Rover</a></li>
+          <ul className="dropdown-menu">
+            <li><a className="dropdown-item" href="https://shop.themanly.in/">Rover</a></li>
          
           </ul>
         </li>
