@@ -164,7 +164,7 @@ header li.nav-item a.nav-link.dropdown-toggle:after { border-right: 2px solid; b
 .banner .row{position: relative;}
 .banner form label{color: #fff;font-size: 13px; font-style: normal;line-height: 1; margin-bottom: 5px; font-family: "Open Sans", sans-serif;}
 .banner form .col-12 { margin-top: 8px; }
-.banner form button.btn { margin-top: 10px;line-height: 1; padding-top: 12px !important;}
+.banner form button.btn { margin-top: 10px;line-height: 1; padding-top: 12px !important;font-family: "Open Sans", sans-serif;}
 .banner form input, .banner form select, .banner form textarea{font-size: 14px;    appearance: auto;font-family: "Open Sans", sans-serif !important;}
 .banner form input, .banner form select{height: 36px; font-family: "Open Sans", sans-serif !important;}
 /* treat_sec */
