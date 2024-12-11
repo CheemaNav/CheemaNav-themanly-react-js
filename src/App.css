@@ -151,7 +151,8 @@ header li.nav-item a.nav-link.dropdown-toggle:after { border-right: 2px solid; b
 .banner h1 strong { font-size: 62px; font-family: unset !important; text-transform: uppercase; }
 .banner{background: url(../public/banner.jpg) no-repeat center / cover;  background-position: top right; position: relative;padding-block: 50px;min-height: 90vh;  margin-top: 110px;}
 .banner_inner{margin-top: 75px; height: 190px;}
-.swal2-container label.number { font-size: 16px; }
+.swal2-container label.number { font-size: 16px;font-family: "Open Sans", sans-serif !important; }
+.swal2-container .swal2-popup div{font-family: "Open Sans", sans-serif !important;}
 /* section.banner:before { content: ''; background: #00000075; width: 100%; height: 100%; position: absolute; top: 0; left: 0; } */
 .banner form { background: #00000033; border-color: #72767a !important; border-radius: 20px !important;    padding: 15px 15px 20px !important;font-family: "Open Sans", sans-serif !important; }
 .payment-status { text-align: center; }
@@ -159,8 +160,9 @@ header li.nav-item a.nav-link.dropdown-toggle:after { border-right: 2px solid; b
 .swal2-container h2, .swal2-container p, .swal2-container a, .swal2-container input, .swal2-container button, .swal2-container span { font-family: "Open Sans", sans-serif !important; color: #111;}
 .swal2-container button { background-color: #084060 !important; border-color: #084060 !important; color: #fff; }
 .swal2-container h2 { font-size: 20px; margin-bottom: 10px; }
-.swal2-container input { width: 70%; font-size: 16px !important; padding: 8px !important; }
+.swal2-container input { width: 100%; font-size: 16px !important; padding: 8px !important; }
 .swal2-container .swal2-popup, .modal .modal-dialog .modal-content{ border-radius: 8px; min-height: 255px;}
+.swal2-container .swal2-popup{display: flex !important ; flex-direction: column; align-items: center; justify-content: center;}
 .banner .row{position: relative;}
 .banner form label{color: #fff;font-size: 13px; font-style: normal;line-height: 1; margin-bottom: 5px; font-family: "Open Sans", sans-serif;}
 .banner form .col-12 { margin-top: 8px; }
