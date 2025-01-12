@@ -5,7 +5,7 @@ const PaymentComponent = () => {
     const [userName, setUserName] = useState(localStorage.getItem('userName') || "John Doe");
     const [email, setEmail] = useState(localStorage.getItem('email') || "john.doe@example.com");
     const [contact, setContact] = useState(localStorage.getItem('contact') || "123456789");
-    const [amount, setAmount] = useState(299); // Payment amount
+    const [amount, setAmount] = useState(399); // Payment amount
     const [paymentStatus, setPaymentStatus] = useState(""); 
     const [showPopup, setShowPopup] = useState(false);
     const [isVerifying, setIsVerifying] = useState(false); // Track payment verification status
@@ -185,7 +185,7 @@ const PaymentComponent = () => {
                                 <div className="payment_btn">
                                     <p className="mb-0 h5 otp_suc">OTP verified</p>
                                     <span className="h2 mb-2">
-                                       Please make your payment of <strong>Rs 299/-</strong>  to <br/> book your appointment
+                                       Please make your payment of <strong>Rs 399/-</strong>  to <br/> book your appointment
                                     </span>
                                     <button className="btn btn-primary w-100" onClick={handlePayment}>
                                         Pay Now
