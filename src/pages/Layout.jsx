@@ -214,7 +214,7 @@ function Layout() {
           <div className='container d-flex align-items-center justify-content-between'>
             <p className='mb-0'>
               Copyright ©
-              <a className="text-white" href="https://themanly.in"> Themanly 2024 </a> All Rights Reserved.<br /> TheManly.in is sub brand of Calvry Wellness Solutions Pvt Ltd.
+              <a className="text-white" href="https://themanly.in"> Themanly 2025 </a> All Rights Reserved.<br /> TheManly.in is sub brand of Calvry Wellness Solutions Pvt Ltd.
             </p>
             <div className='links'>
               <Link to="/Termsconditions" className="text-white me-5">Terms & Conditions</Link>
