@@ -278,10 +278,10 @@ div#navbarSupportedContent { position: fixed; background: #fff; width: 70%; heig
         .banner_icon .detail span{right: 0;}
         .banner_icon .col-md-4.col-12:not(.banner_icon .col-md-4.col-12:last-child) { margin-bottom: 20px; }
         .top-bar .collapse.navbar-collapse { flex-direction: column; }
-        .top-bar .collapse.navbar-collapse a.nav-link { padding-block: 4px; font-size: 13px; }
+        .top-bar .collapse.navbar-collapse a.nav-link { padding-block: 4px; font-size: 13px;        display: inline; }
         header ul.dropdown-menu { border: 0; padding-top: 0; }
         .top-bar {padding-top: 8px;}
-        header .top-bar li.nav-item{padding: 0; width: 50%; display: inline-block;}
+        header .top-bar li.nav-item{padding: 0 8px; width: fit-content; display: inline-block;}
         .top-bar ul.navbar-nav { display: block; width: 100%; text-align: center; }
         header .top-bar li.nav-item:first-child { width: 100%; }
 
