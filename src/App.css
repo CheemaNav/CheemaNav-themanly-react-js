@@ -290,6 +290,7 @@ div#navbarSupportedContent { position: fixed; background: #fff; width: 70%; heig
         header .top-bar li.nav-item{padding: 0 8px; width: fit-content; display: inline-block;}
         .top-bar ul.navbar-nav { display: block; width: 100%; text-align: center; }
         header .top-bar li.nav-item:first-child { width: 100%; }
+        section.booking_page { margin-top: 90px !important; }
 
 
 }
