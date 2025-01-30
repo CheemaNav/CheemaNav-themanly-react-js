@@ -248,7 +248,13 @@ footer .social_icon svg { width: 17px; height: 17px; }
 
 .banner_icon .detail img { width: 80px; margin-bottom: 12px;filter: invert(1);}
 
+/* booking_page */
+.booking_page .banner { background: #07070700; padding: 0 !important; border-radius: 20px !important; margin: 0; }
+.booking_page .banner form label.form-label { color: #111; }
+.booking_page .banner form { background: transparent; padding: 30px !important; }
+
 @media only screen and (max-width: 991px) {
+    .booking_page img.form_img{width: 100%;}
 div#navbarSupportedContent { position: fixed; background: #fff; width: 70%; height: 100vh !important; top: 0; left: 0; z-index: 9; padding: 30px;        transform: translate(-100%, 0);box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     transition: .2s ease-out .12s; }
     div#navbarSupportedContent.show { transform: translate(00%, 0); }

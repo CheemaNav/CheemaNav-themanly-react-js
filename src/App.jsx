@@ -6,6 +6,7 @@ import Home from "./pages/Home.jsx";
 import NoPage from "./pages/NoPage.jsx";
 import Privacypolicy from "./pages/Privacypolicy.jsx";
 import Termsconditions from "./pages/Termsconditions.jsx";
+import Booking from "./pages/Booking.jsx";
 
 
 
@@ -21,6 +22,7 @@ function App() {
             <Route path="*" element={<NoPage />} />
             <Route path="/Privacypolicy" element={<Privacypolicy />} />
             <Route path="/Termsconditions" element={<Termsconditions />} />
+            <Route path="/Booking" element={<Booking />} />
           </Route>
         </Routes>
       </BrowserRouter>
