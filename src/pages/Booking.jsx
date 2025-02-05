@@ -90,8 +90,8 @@ const Booking = () => {
                     <img src='./images/booking_form.png' className='col-md-5 mb-4 rounded form_img' alt='Booking Form' />
                 </div>
                 <div className='text-center mt-2'>
-                    <h1 className='text-center mb-0 h2'>Welcome to TheManly.in</h1>
-                    <p>You are just a step away from having a healthy sexual drive!!</p>
+                    <h1 className='text-center mb-0 h2'>You are just a step away from having <br/>a crazy sexual drive!</h1>
+                    <p>Please share your information with us!</p>
                 </div>
                 <div className="col-md-5 col-12 p-4 bg-white shadow-sm rounded mx-auto banner">
                     <form onSubmit={handleSubmit}>
