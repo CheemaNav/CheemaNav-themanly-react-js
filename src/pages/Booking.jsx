@@ -60,7 +60,7 @@ const Booking = () => {
                 Swal.fire({
                     icon: 'success',
                     title: 'Form Submitted!',
-                    text: 'Your form was submitted successfully! Our team will connect with you soon.',
+                    text: 'Your form was submitted successfully! Our team will contact you soon.',
                     confirmButtonText: 'OK'
                 }).then(() => {
                     setFormData({ name: '', age: '', city: '', mobile: '', email: '', userQuery: '', userContactText: '' });
@@ -90,36 +90,36 @@ const Booking = () => {
                     <img src='./images/booking_form.png' className='col-md-5 mb-4 rounded form_img' alt='Booking Form' />
                 </div>
                 <div className='text-center mt-2'>
-                    <h1 className='text-center mb-0 h2'>You are just a step away from having <br/>a crazy sexual drive!</h1>
+                    <h1 className='text-center mb-0 h2 col-md-6 mx-auto'>You are just a step away from having a crazy sexual drive!</h1>
                     <p>Please share your information with us!</p>
                 </div>
                 <div className="col-md-5 col-12 p-4 bg-white shadow-sm rounded mx-auto banner">
                     <form onSubmit={handleSubmit}>
-                        <div className="mb-3">
+                        <div className="mb-4">
                             <label className='form-label'>Name *</label>
                             <input type="text" className="form-control" name="name" value={formData.name} onChange={handleChange} required />
                         </div>
-                        <div className="mb-3">
+                        <div className="mb-4">
                             <label className='form-label'>Age *</label>
                             <input type="number" className="form-control" name="age" value={formData.age} onChange={handleChange} required />
                         </div>
-                        <div className="mb-3">
+                        <div className="mb-4">
                             <label className='form-label'>City *</label>
                             <input type="text" className="form-control" name="city" value={formData.city} onChange={handleChange} required />
                         </div>
-                        <div className="mb-3">
+                        <div className="mb-4">
                             <label className='form-label'>Mobile No *</label>
                             <input type="tel" className="form-control" name="mobile" value={formData.mobile} onChange={handleChange} required />
                         </div>
-                        <div className="mb-3">
+                        <div className="mb-4">
                             <label className='form-label'>Email</label>
                             <input type="email" className="form-control" name="email" value={formData.email} onChange={handleChange} />
                         </div>
-                        <div className="mb-3">
+                        <div className="mb-4">
                             <label className='form-label'>What is your issue? *</label>
                             <input type="text" className="form-control" name="userQuery" value={formData.userQuery} onChange={handleChange} required />
                         </div>
-                        <div className="mb-3">
+                        <div className="mb-4">
                             <label className='form-label'>When can we contact you? (date & time) *</label>
                             <input type="text" className="form-control" name="userContactText" value={formData.userContactText} onChange={handleChange} required />
                         </div>
